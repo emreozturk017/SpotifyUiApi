@@ -1,0 +1,3 @@
+08:59:35.116 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:14:15.879 assertion failed: path: $, actual: 'Oturum aç - Spotify', expected: 'spotify', reason: not equal
+l
