@@ -1,0 +1,39 @@
+<testsuite failures="0" name="src/test/java/com/spotify/KarateUi.feature" skipped="0" tests="1" time="47.502674">
+  <testcase classname="src.test.java.com.spotify.KarateUi" name="1" time="47.502674">
+    <system-out>* configure driver = {type: 'chromedriver', executable:'src\\test\\resources\\chromedriver.exe'} . passed
+Given driver "https://open.spotify.com/" .................................. passed
+And maximize() ............................................................ passed
+And delay(2000) ........................................................... passed
+When click("//div[@class='ButtonInner-sc-14ud5tc-0 iebPZv encore-inverted-light-set']") . passed
+And delay(2000) ........................................................... passed
+When click("//input[@id='login-username']") ............................... passed
+And input("//input[@id='login-username']" , 'emre.ozturk@testinium.com') .. passed
+And delay(3000) ........................................................... passed
+And click("//input[@id='login-password']") ................................ passed
+And input("//input[@id='login-password']" , '8898emre') ................... passed
+And delay(2000) ........................................................... passed
+When click("//div[@class='ButtonInner-sc-14ud5tc-0 lbsIMA encore-bright-accent-set']") . passed
+And delay(8000) ........................................................... passed
+When click("//div[@class='q3ABXYJT9JZIzXOOtVuO']") ........................ passed
+And delay(2000) ........................................................... passed
+And click("//span[@class='o4KVKZmeHsoRZ2Ltl078']") ........................ passed
+And delay(2000) ........................................................... passed
+And click("//input[@class='f0GjZQZc4c_bKpqdyKbq JaGLdeBa2UaUMBT44vqI']") .. passed
+And input("//input[@class='f0GjZQZc4c_bKpqdyKbq JaGLdeBa2UaUMBT44vqI']", 'Mentorlabs Challange') . passed
+And delay(3000) ........................................................... passed
+And click("//button[@class='Button-qlcn5g-0 jvEinx']") .................... passed
+And delay(2000) ........................................................... passed
+When click("//span[@class='Type__TypeElement-goli3j-0 eHCcSU ellipsis-one-line']") . passed
+And delay(2000) ........................................................... passed
+And click("//a[@href='/search']") ......................................... passed
+And delay(2000) ........................................................... passed
+When click("//input[@class='Type__TypeElement-goli3j-0 ebHsEf QO9loc33XC50mMRUCIvf']") . passed
+And delay(2000) ........................................................... passed
+And input("//input[@class='Type__TypeElement-goli3j-0 ebHsEf QO9loc33XC50mMRUCIvf']" , 'Daft Punk') . passed
+And delay(3000) ........................................................... passed
+When click("//button[@class='T0anrkk_QA4IAQL29get mYN_ST1TsDdC6q1k1_xs']") . passed
+And delay(1000) ........................................................... passed
+And click("//span[@class='Type__TypeElement-goli3j-0 ebHsEf ellipsis-one-line']") . passed
+And delay(1000) ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

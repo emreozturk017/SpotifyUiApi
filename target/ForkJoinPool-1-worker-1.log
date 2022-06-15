@@ -1,3 +1,1649 @@
-08:59:35.116 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-15:14:15.879 assertion failed: path: $, actual: 'Oturum aç - Spotify', expected: 'spotify', reason: not equal
-l
+09:54:10.217 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+09:49:50.963 request:
+1 > POST https://api.spotify.com/v1/users/31pwtnpkdgtcxrud2smuljfb3qzi/playlists
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer BQAoAakC6yCMAxoWN_zv86v24G1swH4GlULBSaFSqq3DMMBGCpZRoq3EsZr_aPmsdOzCVM4ocT7i_nUzUZOT4tKUUWLfaYvF859E6bbtNL0hTahpZZdGubLed8-DbBn4A92LW2Uvl3rRkz7BR_otUN9TxuXUPkaEX4uHeeDTzvhadMSrQ-n36Kcvktp5zHL3ovwa834MkEtJHEXztEsemxUY-3qg2dJDBbT8oJUEH0J2UlcW00uUJRtqLCqqoUFqiVV8AS8LihBpq-M4CKg8lt646Q
+1 > Connection: Keep-Alive
+1 > Content-Length: 69
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: api.spotify.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_331)
+{"name":"ApiTestPlaylist","description":"testSuccess","public":false}
+
+09:49:51.870 response time in milliseconds: 900,40
+1 < 201
+1 < Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+1 < Transfer-Encoding: chunked
+1 < Via: HTTP/2 edgeproxy, 1.1 google
+1 < access-control-allow-credentials: true
+1 < access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+1 < access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+1 < access-control-allow-origin: *
+1 < access-control-max-age: 604800
+1 < cache-control: private, max-age=0
+1 < content-type: application/json; charset=utf-8
+1 < date: Wed, 15 Jun 2022 06:49:50 GMT
+1 < location: https://api.spotify.com/v1/playlists/6j06J7eHbgOyDluKdte3PW
+1 < server: envoy
+1 < strict-transport-security: max-age=31536000
+1 < x-content-type-options: nosniff
+1 < x-robots-tag: noindex, nofollow
+{
+  "collaborative" : false,
+  "description" : "testSuccess",
+  "external_urls" : {
+    "spotify" : "https://open.spotify.com/playlist/6j06J7eHbgOyDluKdte3PW"
+  },
+  "followers" : {
+    "href" : null,
+    "total" : 0
+  },
+  "href" : "https://api.spotify.com/v1/playlists/6j06J7eHbgOyDluKdte3PW",
+  "id" : "6j06J7eHbgOyDluKdte3PW",
+  "images" : [ ],
+  "name" : "ApiTestPlaylist",
+  "owner" : {
+    "display_name" : "Emre",
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/user/31pwtnpkdgtcxrud2smuljfb3qzi"
+    },
+    "href" : "https://api.spotify.com/v1/users/31pwtnpkdgtcxrud2smuljfb3qzi",
+    "id" : "31pwtnpkdgtcxrud2smuljfb3qzi",
+    "type" : "user",
+    "uri" : "spotify:user:31pwtnpkdgtcxrud2smuljfb3qzi"
+  },
+  "primary_color" : null,
+  "public" : false,
+  "snapshot_id" : "MSxmOWRiYWIyNWI0M2M0YmJkMDc0YTliOGM0MzFhYzdhYWEwYTI3ZGJi",
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/playlists/6j06J7eHbgOyDluKdte3PW/tracks",
+    "items" : [ ],
+    "limit" : 100,
+    "next" : null,
+    "offset" : 0,
+    "previous" : null,
+    "total" : 0
+  },
+  "type" : "playlist",
+  "uri" : "spotify:playlist:6j06J7eHbgOyDluKdte3PW"
+}
+
+09:49:51.908 request:
+1 > POST https://api.spotify.com/v1/playlists/6j06J7eHbgOyDluKdte3PW/tracks
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer BQAoAakC6yCMAxoWN_zv86v24G1swH4GlULBSaFSqq3DMMBGCpZRoq3EsZr_aPmsdOzCVM4ocT7i_nUzUZOT4tKUUWLfaYvF859E6bbtNL0hTahpZZdGubLed8-DbBn4A92LW2Uvl3rRkz7BR_otUN9TxuXUPkaEX4uHeeDTzvhadMSrQ-n36Kcvktp5zHL3ovwa834MkEtJHEXztEsemxUY-3qg2dJDBbT8oJUEH0J2UlcW00uUJRtqLCqqoUFqiVV8AS8LihBpq-M4CKg8lt646Q
+1 > Connection: Keep-Alive
+1 > Content-Length: 62
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: api.spotify.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_331)
+{"uris":["spotify:track:3z8h0TU7ReDPLIbEnYhWZb"],"position":0}
+
+09:49:52.398 response time in milliseconds: 489,04
+1 < 201
+1 < Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+1 < Transfer-Encoding: chunked
+1 < Via: HTTP/2 edgeproxy, 1.1 google
+1 < access-control-allow-credentials: true
+1 < access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+1 < access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+1 < access-control-allow-origin: *
+1 < access-control-max-age: 604800
+1 < cache-control: private, max-age=0
+1 < content-type: application/json; charset=utf-8
+1 < date: Wed, 15 Jun 2022 06:49:51 GMT
+1 < server: envoy
+1 < strict-transport-security: max-age=31536000
+1 < x-content-type-options: nosniff
+1 < x-robots-tag: noindex, nofollow
+{
+  "snapshot_id" : "Miw2MTc0MjBmMWYxMjFiMmViNjg5MWU1YWNlMzcyNTgzNzNlYTMzY2Iz"
+}
+
+tcxrud2smuljfb3qzi"
+  },
+  "primary_color" : null,
+  "public" : false,
+  "snapshot_id" : "MSw2YzM2ZmZkZTRlODhiMThlMDM0MzNmY2ZmZmI4YmUxODA4M2U2ZWNi",
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/playlists/1nh23VS7tPf0X5wyHhvK8w/tracks",
+    "items" : [ ],
+    "limit" : 100,
+    "next" : null,
+    "offset" : 0,
+    "previous" : null,
+    "total" : 0
+  },
+  "type" : "playlist",
+  "uri" : "spotify:playlist:1nh23VS7tPf0X5wyHhvK8w"
+}
+
+09:49:18.073 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+09:49:18.080 request:
+1 > GET https://api.spotify.com/v1/search?q=Bohemian+Rhapsody&type=track
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer BQAoAakC6yCMAxoWN_zv86v24G1swH4GlULBSaFSqq3DMMBGCpZRoq3EsZr_aPmsdOzCVM4ocT7i_nUzUZOT4tKUUWLfaYvF859E6bbtNL0hTahpZZdGubLed8-DbBn4A92LW2Uvl3rRkz7BR_otUN9TxuXUPkaEX4uHeeDTzvhadMSrQ-n36Kcvktp5zHL3ovwa834MkEtJHEXztEsemxUY-3qg2dJDBbT8oJUEH0J2UlcW00uUJRtqLCqqoUFqiVV8AS8LihBpq-M4CKg8lt646Q
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: api.spotify.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_331)
+
+09:49:18.454 response time in milliseconds: 355,77
+1 < 200
+1 < Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+1 < Transfer-Encoding: chunked
+1 < Via: HTTP/2 edgeproxy, 1.1 google
+1 < access-control-allow-credentials: true
+1 < access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+1 < access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+1 < access-control-allow-origin: *
+1 < access-control-max-age: 604800
+1 < cache-control: public, max-age=7200
+1 < content-type: application/json; charset=utf-8
+1 < date: Wed, 15 Jun 2022 06:49:17 GMT
+1 < server: envoy
+1 < strict-transport-security: max-age=31536000
+1 < x-content-type-options: nosniff
+1 < x-robots-tag: noindex, nofollow
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Bohemian+Rhapsody&type=track&offset=0&limit=20",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+          "id" : "1dfeR4HaWDbWqFHLkxsg1d",
+          "name" : "Queen",
+          "type" : "artist",
+          "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+        } ],
+        "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "UY", "UZ", "VC", "VE", "VN", "WS", "XK", "ZA", "ZM", "ZW" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/1GbtB4zTqAsyfZEsm1RZfx"
+        },
+        "href" : "https://api.spotify.com/v1/albums/1GbtB4zTqAsyfZEsm1RZfx",
+        "id" : "1GbtB4zTqAsyfZEsm1RZfx",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273e319baafd16e84f0408af2a0",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02e319baafd16e84f0408af2a0",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851e319baafd16e84f0408af2a0",
+          "width" : 64
+        } ],
+        "name" : "A Night At The Opera (2011 Remaster)",
+        "release_date" : "1975-11-21",
+        "release_date_precision" : "day",
+        "total_tracks" : 12,
+        "type" : "album",
+        "uri" : "spotify:album:1GbtB4zTqAsyfZEsm1RZfx"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+        "id" : "1dfeR4HaWDbWqFHLkxsg1d",
+        "name" : "Queen",
+        "type" : "artist",
+        "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+      } ],
+      "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "UY", "UZ", "VC", "VE", "VN", "WS", "XK", "ZA", "ZM", "ZW" ],
+      "disc_number" : 1,
+      "duration_ms" : 354320,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBUM71029604"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/4u7EnebtmKWzUH433cf5Qv"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/4u7EnebtmKWzUH433cf5Qv",
+      "id" : "4u7EnebtmKWzUH433cf5Qv",
+      "is_local" : false,
+      "name" : "Bohemian Rhapsody - Remastered 2011",
+      "popularity" : 81,
+      "preview_url" : null,
+      "track_number" : 11,
+      "type" : "track",
+      "uri" : "spotify:track:4u7EnebtmKWzUH433cf5Qv"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+          "id" : "1dfeR4HaWDbWqFHLkxsg1d",
+          "name" : "Queen",
+          "type" : "artist",
+          "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+        } ],
+        "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6i6folBtxKV28WX3msQ4FE"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6i6folBtxKV28WX3msQ4FE",
+        "id" : "6i6folBtxKV28WX3msQ4FE",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273e8b066f70c206551210d902b",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02e8b066f70c206551210d902b",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851e8b066f70c206551210d902b",
+          "width" : 64
+        } ],
+        "name" : "Bohemian Rhapsody (The Original Soundtrack)",
+        "release_date" : "2018-10-19",
+        "release_date_precision" : "day",
+        "total_tracks" : 22,
+        "type" : "album",
+        "uri" : "spotify:album:6i6folBtxKV28WX3msQ4FE"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+        "id" : "1dfeR4HaWDbWqFHLkxsg1d",
+        "name" : "Queen",
+        "type" : "artist",
+        "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+      } ],
+      "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+      "disc_number" : 1,
+      "duration_ms" : 354947,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBUM71029604"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3z8h0TU7ReDPLIbEnYhWZb"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3z8h0TU7ReDPLIbEnYhWZb",
+      "id" : "3z8h0TU7ReDPLIbEnYhWZb",
+      "is_local" : false,
+      "name" : "Bohemian Rhapsody",
+      "popularity" : 74,
+      "preview_url" : null,
+      "track_number" : 7,
+      "type" : "track",
+      "uri" : "spotify:track:3z8h0TU7ReDPLIbEnYhWZb"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+          "id" : "1dfeR4HaWDbWqFHLkxsg1d",
+          "name" : "Queen",
+          "type" : "artist",
+          "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+        } ],
+        "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6i6folBtxKV28WX3msQ4FE"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6i6folBtxKV28WX3msQ4FE",
+        "id" : "6i6folBtxKV28WX3msQ4FE",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273e8b066f70c206551210d902b",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02e8b066f70c206551210d902b",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851e8b066f70c206551210d902b",
+          "width" : 64
+        } ],
+        "name" : "Bohemian Rhapsody (The Original Soundtrack)",
+        "release_date" : "2018-10-19",
+        "release_date_precision" : "day",
+        "total_tracks" : 22,
+        "type" : "album",
+        "uri" : "spotify:album:6i6folBtxKV28WX3msQ4FE"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+        "id" : "1dfeR4HaWDbWqFHLkxsg1d",
+        "name" : "Queen",
+        "type" : "artist",
+        "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+      } ],
+      "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+      "disc_number" : 1,
+      "duration_ms" : 147840,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBUM71805979"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/7xHATAMD7ezTZGYsNAMr5R"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/7xHATAMD7ezTZGYsNAMr5R",
+      "id" : "7xHATAMD7ezTZGYsNAMr5R",
+      "is_local" : false,
+      "name" : "Bohemian Rhapsody - Live Aid",
+      "popularity" : 58,
+      "preview_url" : null,
+      "track_number" : 16,
+      "type" : "track",
+      "uri" : "spotify:track:7xHATAMD7ezTZGYsNAMr5R"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+          "id" : "1dfeR4HaWDbWqFHLkxsg1d",
+          "name" : "Queen",
+          "type" : "artist",
+          "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+        } ],
+        "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6i6folBtxKV28WX3msQ4FE"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6i6folBtxKV28WX3msQ4FE",
+        "id" : "6i6folBtxKV28WX3msQ4FE",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273e8b066f70c206551210d902b",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02e8b066f70c206551210d902b",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851e8b066f70c206551210d902b",
+          "width" : 64
+        } ],
+        "name" : "Bohemian Rhapsody (The Original Soundtrack)",
+        "release_date" : "2018-10-19",
+        "release_date_precision" : "day",
+        "total_tracks" : 22,
+        "type" : "album",
+        "uri" : "spotify:album:6i6folBtxKV28WX3msQ4FE"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+        "id" : "1dfeR4HaWDbWqFHLkxsg1d",
+        "name" : "Queen",
+        "type" : "artist",
+        "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+      } ],
+      "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+      "disc_number" : 1,
+      "duration_ms" : 223080,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBUM71805978"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/7iAqvWLgZzXvH38lA06QZg"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/7iAqvWLgZzXvH38lA06QZg",
+      "id" : "7iAqvWLgZzXvH38lA06QZg",
+      "is_local" : false,
+      "name" : "I Want To Break Free",
+      "popularity" : 70,
+      "preview_url" : null,
+      "track_number" : 13,
+      "type" : "track",
+      "uri" : "spotify:track:7iAqvWLgZzXvH38lA06QZg"
+    }, {
+      "album" : {
+        "album_type" : "compilation",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+          },
+          "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+          "id" : "0LyfQWJT6nXafLPZqxe9Of",
+          "name" : "Various Artists",
+          "type" : "artist",
+          "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+        } ],
+        "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/5qhiyU2k9DhAHkepmh9Fkg"
+        },
+        "href" : "https://api.spotify.com/v1/albums/5qhiyU2k9DhAHkepmh9Fkg",
+        "id" : "5qhiyU2k9DhAHkepmh9Fkg",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b2730a0426f68d9beb041913a3ff",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e020a0426f68d9beb041913a3ff",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d000048510a0426f68d9beb041913a3ff",
+          "width" : 64
+        } ],
+        "name" : "Songs of Anarchy, Vol. 4 (Music from Sons of Anarchy)",
+        "release_date" : "2015-02-20",
+        "release_date_precision" : "day",
+        "total_tracks" : 11,
+        "type" : "album",
+        "uri" : "spotify:album:5qhiyU2k9DhAHkepmh9Fkg"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/46xMgypLHP8GNsYME3vRnV"
+        },
+        "href" : "https://api.spotify.com/v1/artists/46xMgypLHP8GNsYME3vRnV",
+        "id" : "46xMgypLHP8GNsYME3vRnV",
+        "name" : "The Forest Rangers",
+        "type" : "artist",
+        "uri" : "spotify:artist:46xMgypLHP8GNsYME3vRnV"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3ohcHMuUq1717s8AH17hfT"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3ohcHMuUq1717s8AH17hfT",
+        "id" : "3ohcHMuUq1717s8AH17hfT",
+        "name" : "The White Buffalo",
+        "type" : "artist",
+        "uri" : "spotify:artist:3ohcHMuUq1717s8AH17hfT"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0YyLcVIufBPVyu6vGDzBNO"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0YyLcVIufBPVyu6vGDzBNO",
+        "id" : "0YyLcVIufBPVyu6vGDzBNO",
+        "name" : "Billy Valentine",
+        "type" : "artist",
+        "uri" : "spotify:artist:0YyLcVIufBPVyu6vGDzBNO"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5thMiyWHTQFVgttOjJVEHa"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5thMiyWHTQFVgttOjJVEHa",
+        "id" : "5thMiyWHTQFVgttOjJVEHa",
+        "name" : "Franky Perez",
+        "type" : "artist",
+        "uri" : "spotify:artist:5thMiyWHTQFVgttOjJVEHa"
+      } ],
+      "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+      "disc_number" : 1,
+      "duration_ms" : 404893,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USQX91401767"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/68eeHVg1x99y5PzBk2j7GD"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/68eeHVg1x99y5PzBk2j7GD",
+      "id" : "68eeHVg1x99y5PzBk2j7GD",
+      "is_local" : false,
+      "name" : "Bohemian Rhapsody (feat. The White Buffalo, Billy Valentine & Franky Perez) - From Sons of Anarchy",
+      "popularity" : 47,
+      "preview_url" : "https://p.scdn.co/mp3-preview/4505049946ac83bf522d8f811db7dbb73e3113f0?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:68eeHVg1x99y5PzBk2j7GD"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+          "id" : "1dfeR4HaWDbWqFHLkxsg1d",
+          "name" : "Queen",
+          "type" : "artist",
+          "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+        } ],
+        "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6i6folBtxKV28WX3msQ4FE"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6i6folBtxKV28WX3msQ4FE",
+        "id" : "6i6folBtxKV28WX3msQ4FE",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273e8b066f70c206551210d902b",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02e8b066f70c206551210d902b",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851e8b066f70c206551210d902b",
+          "width" : 64
+        } ],
+        "name" : "Bohemian Rhapsody (The Original Soundtrack)",
+        "release_date" : "2018-10-19",
+        "release_date_precision" : "day",
+        "total_tracks" : 22,
+        "type" : "album",
+        "uri" : "spotify:album:6i6folBtxKV28WX3msQ4FE"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+        "id" : "1dfeR4HaWDbWqFHLkxsg1d",
+        "name" : "Queen",
+        "type" : "artist",
+        "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+      } ],
+      "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+      "disc_number" : 1,
+      "duration_ms" : 271611,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBUM71106221"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/5WZDLZVCvY1rEyNir6k8Pg"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/5WZDLZVCvY1rEyNir6k8Pg",
+      "id" : "5WZDLZVCvY1rEyNir6k8Pg",
+      "is_local" : false,
+      "name" : "The Show Must Go On",
+      "popularity" : 63,
+      "preview_url" : null,
+      "track_number" : 22,
+      "type" : "track",
+      "uri" : "spotify:track:5WZDLZVCvY1rEyNir6k8Pg"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+          "id" : "1dfeR4HaWDbWqFHLkxsg1d",
+          "name" : "Queen",
+          "type" : "artist",
+          "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+        } ],
+        "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/58cLPp4yE9IkQ7TvuHS5r9"
+        },
+        "href" : "https://api.spotify.com/v1/albums/58cLPp4yE9IkQ7TvuHS5r9",
+        "id" : "58cLPp4yE9IkQ7TvuHS5r9",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273efd5124f95524b047ff71be8",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02efd5124f95524b047ff71be8",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851efd5124f95524b047ff71be8",
+          "width" : 64
+        } ],
+        "name" : "Queen Rock Montreal",
+        "release_date" : "2007-10-09",
+        "release_date_precision" : "day",
+        "total_tracks" : 28,
+        "type" : "album",
+        "uri" : "spotify:album:58cLPp4yE9IkQ7TvuHS5r9"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+        "id" : "1dfeR4HaWDbWqFHLkxsg1d",
+        "name" : "Queen",
+        "type" : "artist",
+        "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+      } ],
+      "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+      "disc_number" : 2,
+      "duration_ms" : 328933,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBCEE0700025"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/64uO28GXj2aA7DYcvnEoCl"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/64uO28GXj2aA7DYcvnEoCl",
+      "id" : "64uO28GXj2aA7DYcvnEoCl",
+      "is_local" : false,
+      "name" : "Bohemian Rhapsody - Live",
+      "popularity" : 40,
+      "preview_url" : null,
+      "track_number" : 9,
+      "type" : "track",
+      "uri" : "spotify:track:64uO28GXj2aA7DYcvnEoCl"
+    }, {
+      "album" : {
+        "album_type" : "compilation",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+          },
+          "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+          "id" : "0LyfQWJT6nXafLPZqxe9Of",
+          "name" : "Various Artists",
+          "type" : "artist",
+          "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+        } ],
+        "available_markets" : [ "AD", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BG", "BI", "BJ", "BO", "BR", "BS", "BT", "BW", "BZ", "CA", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IS", "IT", "JM", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KZ", "LA", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NR", "NZ", "PA", "PE", "PG", "PH", "PK", "PL", "PT", "PW", "PY", "RO", "RS", "RW", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/5rOHrnrRomvSJhQLGVtfJ8"
+        },
+        "href" : "https://api.spotify.com/v1/albums/5rOHrnrRomvSJhQLGVtfJ8",
+        "id" : "5rOHrnrRomvSJhQLGVtfJ8",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273cb4ec52c48a6b071ed2ab6bc",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02cb4ec52c48a6b071ed2ab6bc",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851cb4ec52c48a6b071ed2ab6bc",
+          "width" : 64
+        } ],
+        "name" : "Suicide Squad: The Album",
+        "release_date" : "2016-08-05",
+        "release_date_precision" : "day",
+        "total_tracks" : 14,
+        "type" : "album",
+        "uri" : "spotify:album:5rOHrnrRomvSJhQLGVtfJ8"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/20JZFwl6HVl6yg8a4H3ZqK"
+        },
+        "href" : "https://api.spotify.com/v1/artists/20JZFwl6HVl6yg8a4H3ZqK",
+        "id" : "20JZFwl6HVl6yg8a4H3ZqK",
+        "name" : "Panic! At The Disco",
+        "type" : "artist",
+        "uri" : "spotify:artist:20JZFwl6HVl6yg8a4H3ZqK"
+      } ],
+      "available_markets" : [ "AD", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BG", "BI", "BJ", "BO", "BR", "BS", "BT", "BW", "BZ", "CA", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IS", "IT", "JM", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KZ", "LA", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NR", "NZ", "PA", "PE", "PG", "PH", "PK", "PL", "PT", "PW", "PY", "RO", "RS", "RW", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+      "disc_number" : 1,
+      "duration_ms" : 363114,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USAT21602014"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2YSbHu9XF4bNYWt3MnIhgE"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2YSbHu9XF4bNYWt3MnIhgE",
+      "id" : "2YSbHu9XF4bNYWt3MnIhgE",
+      "is_local" : false,
+      "name" : "Bohemian Rhapsody",
+      "popularity" : 57,
+      "preview_url" : "https://p.scdn.co/mp3-preview/455275ec3678191673aae30baace754df179dfe3?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 11,
+      "type" : "track",
+      "uri" : "spotify:track:2YSbHu9XF4bNYWt3MnIhgE"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+          "id" : "1dfeR4HaWDbWqFHLkxsg1d",
+          "name" : "Queen",
+          "type" : "artist",
+          "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+        } ],
+        "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6i6folBtxKV28WX3msQ4FE"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6i6folBtxKV28WX3msQ4FE",
+        "id" : "6i6folBtxKV28WX3msQ4FE",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273e8b066f70c206551210d902b",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02e8b066f70c206551210d902b",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851e8b066f70c206551210d902b",
+          "width" : 64
+        } ],
+        "name" : "Bohemian Rhapsody (The Original Soundtrack)",
+        "release_date" : "2018-10-19",
+        "release_date_precision" : "day",
+        "total_tracks" : 22,
+        "type" : "album",
+        "uri" : "spotify:album:6i6folBtxKV28WX3msQ4FE"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+        "id" : "1dfeR4HaWDbWqFHLkxsg1d",
+        "name" : "Queen",
+        "type" : "artist",
+        "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+      } ],
+      "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+      "disc_number" : 1,
+      "duration_ms" : 179355,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBUM71029606"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/300YN8ebGB90nDuzgz0f3O"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/300YN8ebGB90nDuzgz0f3O",
+      "id" : "300YN8ebGB90nDuzgz0f3O",
+      "is_local" : false,
+      "name" : "Killer Queen",
+      "popularity" : 68,
+      "preview_url" : null,
+      "track_number" : 5,
+      "type" : "track",
+      "uri" : "spotify:track:300YN8ebGB90nDuzgz0f3O"
+    }, {
+      "album" : {
+        "album_type" : "single",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/7hQeIIUp0TXkNgxPZzF7Th"
+          },
+          "href" : "https://api.spotify.com/v1/artists/7hQeIIUp0TXkNgxPZzF7Th",
+          "id" : "7hQeIIUp0TXkNgxPZzF7Th",
+          "name" : "Daisy Gray",
+          "type" : "artist",
+          "uri" : "spotify:artist:7hQeIIUp0TXkNgxPZzF7Th"
+        } ],
+        "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/02XnINSvZFOlFYUWbtURex"
+        },
+        "href" : "https://api.spotify.com/v1/albums/02XnINSvZFOlFYUWbtURex",
+        "id" : "02XnINSvZFOlFYUWbtURex",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b27359e5f0fa5aa820d9f4e20937",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e0259e5f0fa5aa820d9f4e20937",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d0000485159e5f0fa5aa820d9f4e20937",
+          "width" : 64
+        } ],
+        "name" : "Bohemian Rhapsody",
+        "release_date" : "2021-02-05",
+        "release_date_precision" : "day",
+        "total_tracks" : 1,
+        "type" : "album",
+        "uri" : "spotify:album:02XnINSvZFOlFYUWbtURex"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/7hQeIIUp0TXkNgxPZzF7Th"
+        },
+        "href" : "https://api.spotify.com/v1/artists/7hQeIIUp0TXkNgxPZzF7Th",
+        "id" : "7hQeIIUp0TXkNgxPZzF7Th",
+        "name" : "Daisy Gray",
+        "type" : "artist",
+        "uri" : "spotify:artist:7hQeIIUp0TXkNgxPZzF7Th"
+      } ],
+      "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+      "disc_number" : 1,
+      "duration_ms" : 245468,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "QZNMU2115273"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1XzJrnQz8Hzv6abTC5qn8U"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1XzJrnQz8Hzv6abTC5qn8U",
+      "id" : "1XzJrnQz8Hzv6abTC5qn8U",
+      "is_local" : false,
+      "name" : "Bohemian Rhapsody",
+      "popularity" : 34,
+      "preview_url" : "https://p.scdn.co/mp3-preview/01051991df4a1b53e98c72ba37bbb1f407265d89?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:1XzJrnQz8Hzv6abTC5qn8U"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/5bHjVR4F2Tfq4Ha6x7K6wU"
+          },
+          "href" : "https://api.spotify.com/v1/artists/5bHjVR4F2Tfq4Ha6x7K6wU",
+          "id" : "5bHjVR4F2Tfq4Ha6x7K6wU",
+          "name" : "Rockabye Baby!",
+          "type" : "artist",
+          "uri" : "spotify:artist:5bHjVR4F2Tfq4Ha6x7K6wU"
+        } ],
+        "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/7GWzwOQTOGlyqwUOJSWPCN"
+        },
+        "href" : "https://api.spotify.com/v1/albums/7GWzwOQTOGlyqwUOJSWPCN",
+        "id" : "7GWzwOQTOGlyqwUOJSWPCN",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b27366ef3d044e02a9fb82a2db82",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e0266ef3d044e02a9fb82a2db82",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d0000485166ef3d044e02a9fb82a2db82",
+          "width" : 64
+        } ],
+        "name" : "Lullaby Renditions of Queen",
+        "release_date" : "2009-05-19",
+        "release_date_precision" : "day",
+        "total_tracks" : 12,
+        "type" : "album",
+        "uri" : "spotify:album:7GWzwOQTOGlyqwUOJSWPCN"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5bHjVR4F2Tfq4Ha6x7K6wU"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5bHjVR4F2Tfq4Ha6x7K6wU",
+        "id" : "5bHjVR4F2Tfq4Ha6x7K6wU",
+        "name" : "Rockabye Baby!",
+        "type" : "artist",
+        "uri" : "spotify:artist:5bHjVR4F2Tfq4Ha6x7K6wU"
+      } ],
+      "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+      "disc_number" : 1,
+      "duration_ms" : 274280,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USEWC0882101"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2OWOkkAQv7KFlScZymrfZ4"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2OWOkkAQv7KFlScZymrfZ4",
+      "id" : "2OWOkkAQv7KFlScZymrfZ4",
+      "is_local" : false,
+      "name" : "Bohemian Rhapsody",
+      "popularity" : 49,
+      "preview_url" : "https://p.scdn.co/mp3-preview/32ee4b303287b090083f651d3c634f63bd7535d9?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:2OWOkkAQv7KFlScZymrfZ4"
+    }, {
+      "album" : {
+        "album_type" : "single",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/4LaimQU44rsz2kMWQmY6Bi"
+          },
+          "href" : "https://api.spotify.com/v1/artists/4LaimQU44rsz2kMWQmY6Bi",
+          "id" : "4LaimQU44rsz2kMWQmY6Bi",
+          "name" : "John Adams",
+          "type" : "artist",
+          "uri" : "spotify:artist:4LaimQU44rsz2kMWQmY6Bi"
+        } ],
+        "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6mvwcq1i7w481wYCtxJyso"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6mvwcq1i7w481wYCtxJyso",
+        "id" : "6mvwcq1i7w481wYCtxJyso",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273dbf9bbde43127734e1ce9c29",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02dbf9bbde43127734e1ce9c29",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851dbf9bbde43127734e1ce9c29",
+          "width" : 64
+        } ],
+        "name" : "Bohemian Rhapsody (Acoustic)",
+        "release_date" : "2018-10-22",
+        "release_date_precision" : "day",
+        "total_tracks" : 1,
+        "type" : "album",
+        "uri" : "spotify:album:6mvwcq1i7w481wYCtxJyso"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4LaimQU44rsz2kMWQmY6Bi"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4LaimQU44rsz2kMWQmY6Bi",
+        "id" : "4LaimQU44rsz2kMWQmY6Bi",
+        "name" : "John Adams",
+        "type" : "artist",
+        "uri" : "spotify:artist:4LaimQU44rsz2kMWQmY6Bi"
+      } ],
+      "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+      "disc_number" : 1,
+      "duration_ms" : 173426,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "UK42F1800329"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/6f9qzNP6elRi8i2NgqGoE5"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/6f9qzNP6elRi8i2NgqGoE5",
+      "id" : "6f9qzNP6elRi8i2NgqGoE5",
+      "is_local" : false,
+      "name" : "Bohemian Rhapsody - Acoustic",
+      "popularity" : 49,
+      "preview_url" : "https://p.scdn.co/mp3-preview/de48e7b617696e95ad978899551744ac332213e7?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:6f9qzNP6elRi8i2NgqGoE5"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+          "id" : "1dfeR4HaWDbWqFHLkxsg1d",
+          "name" : "Queen",
+          "type" : "artist",
+          "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+        } ],
+        "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6i6folBtxKV28WX3msQ4FE"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6i6folBtxKV28WX3msQ4FE",
+        "id" : "6i6folBtxKV28WX3msQ4FE",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273e8b066f70c206551210d902b",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02e8b066f70c206551210d902b",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851e8b066f70c206551210d902b",
+          "width" : 64
+        } ],
+        "name" : "Bohemian Rhapsody (The Original Soundtrack)",
+        "release_date" : "2018-10-19",
+        "release_date_precision" : "day",
+        "total_tracks" : 22,
+        "type" : "album",
+        "uri" : "spotify:album:6i6folBtxKV28WX3msQ4FE"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+        "id" : "1dfeR4HaWDbWqFHLkxsg1d",
+        "name" : "Queen",
+        "type" : "artist",
+        "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+      } ],
+      "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+      "disc_number" : 1,
+      "duration_ms" : 217824,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBUM71805977"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3INsYP1Y8GG4qJvBsKCdXC"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3INsYP1Y8GG4qJvBsKCdXC",
+      "id" : "3INsYP1Y8GG4qJvBsKCdXC",
+      "is_local" : false,
+      "name" : "Don't Stop Me Now - ...Revisited",
+      "popularity" : 68,
+      "preview_url" : null,
+      "track_number" : 21,
+      "type" : "track",
+      "uri" : "spotify:track:3INsYP1Y8GG4qJvBsKCdXC"
+    }, {
+      "album" : {
+        "album_type" : "compilation",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+          },
+          "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+          "id" : "0LyfQWJT6nXafLPZqxe9Of",
+          "name" : "Various Artists",
+          "type" : "artist",
+          "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+        } ],
+        "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/26pN2HAuYxPHumuRghBFip"
+        },
+        "href" : "https://api.spotify.com/v1/albums/26pN2HAuYxPHumuRghBFip",
+        "id" : "26pN2HAuYxPHumuRghBFip",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b27307735c7591399cd26c09b211",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e0207735c7591399cd26c09b211",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d0000485107735c7591399cd26c09b211",
+          "width" : 64
+        } ],
+        "name" : "Live Aid (Live, 13th July 1985)",
+        "release_date" : "1985",
+        "release_date_precision" : "year",
+        "total_tracks" : 111,
+        "type" : "album",
+        "uri" : "spotify:album:26pN2HAuYxPHumuRghBFip"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+        "id" : "1dfeR4HaWDbWqFHLkxsg1d",
+        "name" : "Queen",
+        "type" : "artist",
+        "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+      } ],
+      "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+      "disc_number" : 2,
+      "duration_ms" : 390121,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "UK6821836636"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/06yFyGZK1lj7D91iYTRkL9"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/06yFyGZK1lj7D91iYTRkL9",
+      "id" : "06yFyGZK1lj7D91iYTRkL9",
+      "is_local" : false,
+      "name" : "Bohemian Rhapsody / Radio Gaga - Live at Live Aid, Wembley Stadium, 13th July 1985",
+      "popularity" : 34,
+      "preview_url" : "https://p.scdn.co/mp3-preview/2bfdf3e45428cfb786c8df9648bf35e692e4e465?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 7,
+      "type" : "track",
+      "uri" : "spotify:track:06yFyGZK1lj7D91iYTRkL9"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+          "id" : "1dfeR4HaWDbWqFHLkxsg1d",
+          "name" : "Queen",
+          "type" : "artist",
+          "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+        } ],
+        "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "UY", "UZ", "VC", "VE", "VN", "WS", "XK", "ZA", "ZM", "ZW" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/0pipZo4jBQ2hA4HphdFccg"
+        },
+        "href" : "https://api.spotify.com/v1/albums/0pipZo4jBQ2hA4HphdFccg",
+        "id" : "0pipZo4jBQ2hA4HphdFccg",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b2736334b723f809a8b1de2b475c",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e026334b723f809a8b1de2b475c",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d000048516334b723f809a8b1de2b475c",
+          "width" : 64
+        } ],
+        "name" : "Live At Wembley Stadium",
+        "release_date" : "1992-05-26",
+        "release_date_precision" : "day",
+        "total_tracks" : 28,
+        "type" : "album",
+        "uri" : "spotify:album:0pipZo4jBQ2hA4HphdFccg"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+        "id" : "1dfeR4HaWDbWqFHLkxsg1d",
+        "name" : "Queen",
+        "type" : "artist",
+        "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+      } ],
+      "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "UY", "UZ", "VC", "VE", "VN", "WS", "XK", "ZA", "ZM", "ZW" ],
+      "disc_number" : 2,
+      "duration_ms" : 350573,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBCEE0300050"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2XbcujvemK0hGh0Ob4HAXQ"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2XbcujvemK0hGh0Ob4HAXQ",
+      "id" : "2XbcujvemK0hGh0Ob4HAXQ",
+      "is_local" : false,
+      "name" : "Bohemian Rhapsody - Live At Wembley Stadium / July 1986",
+      "popularity" : 51,
+      "preview_url" : null,
+      "track_number" : 7,
+      "type" : "track",
+      "uri" : "spotify:track:2XbcujvemK0hGh0Ob4HAXQ"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+          "id" : "1dfeR4HaWDbWqFHLkxsg1d",
+          "name" : "Queen",
+          "type" : "artist",
+          "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+        } ],
+        "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6i6folBtxKV28WX3msQ4FE"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6i6folBtxKV28WX3msQ4FE",
+        "id" : "6i6folBtxKV28WX3msQ4FE",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273e8b066f70c206551210d902b",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02e8b066f70c206551210d902b",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851e8b066f70c206551210d902b",
+          "width" : 64
+        } ],
+        "name" : "Bohemian Rhapsody (The Original Soundtrack)",
+        "release_date" : "2018-10-19",
+        "release_date_precision" : "day",
+        "total_tracks" : 22,
+        "type" : "album",
+        "uri" : "spotify:album:6i6folBtxKV28WX3msQ4FE"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+        "id" : "1dfeR4HaWDbWqFHLkxsg1d",
+        "name" : "Queen",
+        "type" : "artist",
+        "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+      } ],
+      "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+      "disc_number" : 1,
+      "duration_ms" : 214640,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBUM71029605"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2k1yPYf9WGA4LiqcLVwtzn"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2k1yPYf9WGA4LiqcLVwtzn",
+      "id" : "2k1yPYf9WGA4LiqcLVwtzn",
+      "is_local" : false,
+      "name" : "Another One Bites The Dust",
+      "popularity" : 63,
+      "preview_url" : null,
+      "track_number" : 12,
+      "type" : "track",
+      "uri" : "spotify:track:2k1yPYf9WGA4LiqcLVwtzn"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+          "id" : "1dfeR4HaWDbWqFHLkxsg1d",
+          "name" : "Queen",
+          "type" : "artist",
+          "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+        } ],
+        "available_markets" : [ "AD", "AG", "AR", "AT", "AU", "BB", "BE", "BG", "BO", "BR", "BS", "BZ", "CH", "CL", "CO", "CR", "CW", "CY", "CZ", "DE", "DK", "DM", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GD", "GR", "GT", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JM", "JP", "KN", "LC", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TH", "TR", "TT", "TW", "UA", "UY", "VC", "VN", "ZA" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/70pjSyIDOZ5G5blR6aNXkQ"
+        },
+        "href" : "https://api.spotify.com/v1/albums/70pjSyIDOZ5G5blR6aNXkQ",
+        "id" : "70pjSyIDOZ5G5blR6aNXkQ",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273545d78706aef46068cdd4056",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02545d78706aef46068cdd4056",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851545d78706aef46068cdd4056",
+          "width" : 64
+        } ],
+        "name" : "Queen Rock Montreal",
+        "release_date" : "2007-10-29",
+        "release_date_precision" : "day",
+        "total_tracks" : 27,
+        "type" : "album",
+        "uri" : "spotify:album:70pjSyIDOZ5G5blR6aNXkQ"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+        "id" : "1dfeR4HaWDbWqFHLkxsg1d",
+        "name" : "Queen",
+        "type" : "artist",
+        "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+      } ],
+      "available_markets" : [ "AD", "AG", "AR", "AT", "AU", "BB", "BE", "BG", "BO", "BR", "BS", "BZ", "CH", "CL", "CO", "CR", "CW", "CY", "CZ", "DE", "DK", "DM", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GD", "GR", "GT", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JM", "JP", "KN", "LC", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TH", "TR", "TT", "TW", "UA", "UY", "VC", "VN", "ZA" ],
+      "disc_number" : 2,
+      "duration_ms" : 328933,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBCEE0700025"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0U49xOQCWh6zDWcu5r8Why"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0U49xOQCWh6zDWcu5r8Why",
+      "id" : "0U49xOQCWh6zDWcu5r8Why",
+      "is_local" : false,
+      "name" : "Bohemian Rhapsody - Live At The Montreal Forum / November 1981",
+      "popularity" : 41,
+      "preview_url" : null,
+      "track_number" : 9,
+      "type" : "track",
+      "uri" : "spotify:track:0U49xOQCWh6zDWcu5r8Why"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+          "id" : "1dfeR4HaWDbWqFHLkxsg1d",
+          "name" : "Queen",
+          "type" : "artist",
+          "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+        } ],
+        "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6i6folBtxKV28WX3msQ4FE"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6i6folBtxKV28WX3msQ4FE",
+        "id" : "6i6folBtxKV28WX3msQ4FE",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273e8b066f70c206551210d902b",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02e8b066f70c206551210d902b",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851e8b066f70c206551210d902b",
+          "width" : 64
+        } ],
+        "name" : "Bohemian Rhapsody (The Original Soundtrack)",
+        "release_date" : "2018-10-19",
+        "release_date_precision" : "day",
+        "total_tracks" : 22,
+        "type" : "album",
+        "uri" : "spotify:album:6i6folBtxKV28WX3msQ4FE"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+        "id" : "1dfeR4HaWDbWqFHLkxsg1d",
+        "name" : "Queen",
+        "type" : "artist",
+        "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+      } ],
+      "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+      "disc_number" : 1,
+      "duration_ms" : 245680,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBUM71805980"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0YwBZKT8JE4U5TwmYE9BV9"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0YwBZKT8JE4U5TwmYE9BV9",
+      "id" : "0YwBZKT8JE4U5TwmYE9BV9",
+      "is_local" : false,
+      "name" : "Radio Ga Ga - Live Aid",
+      "popularity" : 65,
+      "preview_url" : null,
+      "track_number" : 17,
+      "type" : "track",
+      "uri" : "spotify:track:0YwBZKT8JE4U5TwmYE9BV9"
+    }, {
+      "album" : {
+        "album_type" : "single",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/0iQDOaYEA5i9RAF0Z73iXb"
+          },
+          "href" : "https://api.spotify.com/v1/artists/0iQDOaYEA5i9RAF0Z73iXb",
+          "id" : "0iQDOaYEA5i9RAF0Z73iXb",
+          "name" : "Angelina Jordan",
+          "type" : "artist",
+          "uri" : "spotify:artist:0iQDOaYEA5i9RAF0Z73iXb"
+        } ],
+        "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2eTZer3GBKUF8AZOEqpiMj"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2eTZer3GBKUF8AZOEqpiMj",
+        "id" : "2eTZer3GBKUF8AZOEqpiMj",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273789bfaea6e7da3ef84d5ddff",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02789bfaea6e7da3ef84d5ddff",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851789bfaea6e7da3ef84d5ddff",
+          "width" : 64
+        } ],
+        "name" : "Bohemian Rhapsody",
+        "release_date" : "2020-01-24",
+        "release_date_precision" : "day",
+        "total_tracks" : 1,
+        "type" : "album",
+        "uri" : "spotify:album:2eTZer3GBKUF8AZOEqpiMj"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0iQDOaYEA5i9RAF0Z73iXb"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0iQDOaYEA5i9RAF0Z73iXb",
+        "id" : "0iQDOaYEA5i9RAF0Z73iXb",
+        "name" : "Angelina Jordan",
+        "type" : "artist",
+        "uri" : "spotify:artist:0iQDOaYEA5i9RAF0Z73iXb"
+      } ],
+      "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+      "disc_number" : 1,
+      "duration_ms" : 148750,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "QZFYY2065104"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/4dPKZJKJzPl4TEWLsMdohE"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/4dPKZJKJzPl4TEWLsMdohE",
+      "id" : "4dPKZJKJzPl4TEWLsMdohE",
+      "is_local" : false,
+      "name" : "Bohemian Rhapsody",
+      "popularity" : 53,
+      "preview_url" : "https://p.scdn.co/mp3-preview/30562bd109a553d109be76e83f14af49de0ebf02?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:4dPKZJKJzPl4TEWLsMdohE"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+          "id" : "1dfeR4HaWDbWqFHLkxsg1d",
+          "name" : "Queen",
+          "type" : "artist",
+          "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+        } ],
+        "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6i6folBtxKV28WX3msQ4FE"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6i6folBtxKV28WX3msQ4FE",
+        "id" : "6i6folBtxKV28WX3msQ4FE",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273e8b066f70c206551210d902b",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02e8b066f70c206551210d902b",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851e8b066f70c206551210d902b",
+          "width" : 64
+        } ],
+        "name" : "Bohemian Rhapsody (The Original Soundtrack)",
+        "release_date" : "2018-10-19",
+        "release_date_precision" : "day",
+        "total_tracks" : 22,
+        "type" : "album",
+        "uri" : "spotify:album:6i6folBtxKV28WX3msQ4FE"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+        "id" : "1dfeR4HaWDbWqFHLkxsg1d",
+        "name" : "Queen",
+        "type" : "artist",
+        "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+      } ],
+      "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+      "disc_number" : 1,
+      "duration_ms" : 295733,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBUM71029613"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/5txoZyuAmtCfmDjUCEphWm"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/5txoZyuAmtCfmDjUCEphWm",
+      "id" : "5txoZyuAmtCfmDjUCEphWm",
+      "is_local" : false,
+      "name" : "Somebody To Love",
+      "popularity" : 66,
+      "preview_url" : null,
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:5txoZyuAmtCfmDjUCEphWm"
+    } ],
+    "limit" : 20,
+    "next" : "https://api.spotify.com/v1/search?query=Bohemian+Rhapsody&type=track&offset=20&limit=20",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 3070
+  }
+}
+
+09:49:18.488 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+09:49:18.735 request:
+1 > POST https://api.spotify.com/v1/users/31pwtnpkdgtcxrud2smuljfb3qzi/playlists
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer BQAoAakC6yCMAxoWN_zv86v24G1swH4GlULBSaFSqq3DMMBGCpZRoq3EsZr_aPmsdOzCVM4ocT7i_nUzUZOT4tKUUWLfaYvF859E6bbtNL0hTahpZZdGubLed8-DbBn4A92LW2Uvl3rRkz7BR_otUN9TxuXUPkaEX4uHeeDTzvhadMSrQ-n36Kcvktp5zHL3ovwa834MkEtJHEXztEsemxUY-3qg2dJDBbT8oJUEH0J2UlcW00uUJRtqLCqqoUFqiVV8AS8LihBpq-M4CKg8lt646Q
+1 > Connection: Keep-Alive
+1 > Content-Length: 69
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: api.spotify.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_331)
+{"name":"ApiTestPlaylist","description":"testSuccess","public":false}
+
+09:49:19.432 response time in milliseconds: 699,12
+1 < 201
+1 < Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+1 < Transfer-Encoding: chunked
+1 < Via: HTTP/2 edgeproxy, 1.1 google
+1 < access-control-allow-credentials: true
+1 < access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+1 < access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+1 < access-control-allow-origin: *
+1 < access-control-max-age: 604800
+1 < cache-control: private, max-age=0
+1 < content-type: application/json; charset=utf-8
+1 < date: Wed, 15 Jun 2022 06:49:18 GMT
+1 < location: https://api.spotify.com/v1/playlists/0yyXT1XXEhETtY8f7WBUog
+1 < server: envoy
+1 < strict-transport-security: max-age=31536000
+1 < x-content-type-options: nosniff
+1 < x-robots-tag: noindex, nofollow
+{
+  "collaborative" : false,
+  "description" : "testSuccess",
+  "external_urls" : {
+    "spotify" : "https://open.spotify.com/playlist/0yyXT1XXEhETtY8f7WBUog"
+  },
+  "followers" : {
+    "href" : null,
+    "total" : 0
+  },
+  "href" : "https://api.spotify.com/v1/playlists/0yyXT1XXEhETtY8f7WBUog",
+  "id" : "0yyXT1XXEhETtY8f7WBUog",
+  "images" : [ ],
+  "name" : "ApiTestPlaylist",
+  "owner" : {
+    "display_name" : "Emre",
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/user/31pwtnpkdgtcxrud2smuljfb3qzi"
+    },
+    "href" : "https://api.spotify.com/v1/users/31pwtnpkdgtcxrud2smuljfb3qzi",
+    "id" : "31pwtnpkdgtcxrud2smuljfb3qzi",
+    "type" : "user",
+    "uri" : "spotify:user:31pwtnpkdgtcxrud2smuljfb3qzi"
+  },
+  "primary_color" : null,
+  "public" : false,
+  "snapshot_id" : "MSw3ZGExZmZlNWRjMmVlYTVkZmI1Mjk4MzNiNTgyNzFkNWMxNzFkMGI4",
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/playlists/0yyXT1XXEhETtY8f7WBUog/tracks",
+    "items" : [ ],
+    "limit" : 100,
+    "next" : null,
+    "offset" : 0,
+    "previous" : null,
+    "total" : 0
+  },
+  "type" : "playlist",
+  "uri" : "spotify:playlist:0yyXT1XXEhETtY8f7WBUog"
+}
+
+09:49:19.457 request:
+1 > POST https://api.spotify.com/v1/playlists/0yyXT1XXEhETtY8f7WBUog/tracks
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer BQAoAakC6yCMAxoWN_zv86v24G1swH4GlULBSaFSqq3DMMBGCpZRoq3EsZr_aPmsdOzCVM4ocT7i_nUzUZOT4tKUUWLfaYvF859E6bbtNL0hTahpZZdGubLed8-DbBn4A92LW2Uvl3rRkz7BR_otUN9TxuXUPkaEX4uHeeDTzvhadMSrQ-n36Kcvktp5zHL3ovwa834MkEtJHEXztEsemxUY-3qg2dJDBbT8oJUEH0J2UlcW00uUJRtqLCqqoUFqiVV8AS8LihBpq-M4CKg8lt646Q
+1 > Connection: Keep-Alive
+1 > Content-Length: 62
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: api.spotify.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_331)
+{"uris":["spotify:track:3z8h0TU7ReDPLIbEnYhWZb"],"position":0}
+
+09:49:19.839 response time in milliseconds: 381,83
+1 < 201
+1 < Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+1 < Transfer-Encoding: chunked
+1 < Via: HTTP/2 edgeproxy, 1.1 google
+1 < access-control-allow-credentials: true
+1 < access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+1 < access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+1 < access-control-allow-origin: *
+1 < access-control-max-age: 604800
+1 < cache-control: private, max-age=0
+1 < content-type: application/json; charset=utf-8
+1 < date: Wed, 15 Jun 2022 06:49:18 GMT
+1 < server: envoy
+1 < strict-transport-security: max-age=31536000
+1 < x-content-type-options: nosniff
+1 < x-robots-tag: noindex, nofollow
+{
+  "snapshot_id" : "Myw3MzQ5ZjNjNzk0ZTUwOGRlYWZhMWFiZGE2ZTcwM2VmOWU1ZWM1MWNl"
+}
+
+

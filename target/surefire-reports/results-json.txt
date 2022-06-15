@@ -1,1 +1,1 @@
-{"features":1,"ignored":0,"efficiency":0.9016909673364286,"failures":null,"totalTime":44472.3002,"threads":1,"scenarios":1,"failed":0,"passed":1,"version":"0.9.6","elapsedTime":49321.0}
+{"features":1,"ignored":0,"efficiency":0.9787907751586582,"failures":null,"totalTime":47502.6739,"threads":1,"scenarios":1,"failed":0,"passed":1,"version":"0.9.6","elapsedTime":48532.0}

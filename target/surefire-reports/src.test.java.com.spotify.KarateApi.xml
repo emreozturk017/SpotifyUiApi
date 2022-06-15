@@ -1,0 +1,17 @@
+<testsuite failures="0" name="src/test/java/com/spotify/KarateApi.feature" skipped="0" tests="1" time="2.446545">
+  <testcase classname="src.test.java.com.spotify.KarateApi" name="Add item" time="2.446545">
+    <system-out>* def urlHome = 'https://open.spotify.com/' ............................... passed
+* def userid = '31pwtnpkdgtcxrud2smuljfb3qzi' ............................. passed
+* def token = 'Bearer BQAoAakC6yCMAxoWN_zv86v24G1swH4GlULBSaFSqq3DMMBGCpZRoq3EsZr_aPmsdOzCVM4ocT7i_nUzUZOT4tKUUWLfaYvF859E6bbtNL0hTahpZZdGubLed8-DbBn4A92LW2Uvl3rRkz7BR_otUN9TxuXUPkaEX4uHeeDTzvhadMSrQ-n36Kcvktp5zHL3ovwa834MkEtJHEXztEsemxUY-3qg2dJDBbT8oJUEH0J2UlcW00uUJRtqLCqqoUFqiVV8AS8LihBpq-M4CKg8lt646Q' . passed
+* def requestbody = ....................................................... passed
+* def requestbody2 = ...................................................... passed
+* def callback = call read('KarateApi.feature@Create') .................... passed
+* def playlistnewid = callback.playlistid ................................. passed
+Given url 'https://api.spotify.com/v1' .................................... passed
+And path '/playlists/'+playlistnewid+'/tracks' ............................ passed
+And header Authorization = token .......................................... passed
+And header Content-Type = 'application/json' .............................. passed
+And request requestbody2 .................................................. passed
+When method POST .......................................................... passed</system-out>
+  </testcase>
+</testsuite>
