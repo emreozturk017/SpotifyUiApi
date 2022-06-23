@@ -1,8 +1,107 @@
-<testsuite failures="0" name="src/test/java/com/spotify/KarateApi.feature" skipped="0" tests="1" time="2.446545">
-  <testcase classname="src.test.java.com.spotify.KarateApi" name="Add item" time="2.446545">
+<testsuite failures="0" name="src/test/java/com/spotify/KarateApi.feature" skipped="0" tests="4" time="3.517553">
+  <testcase classname="src.test.java.com.spotify.KarateApi" name="get playlist" time="1.047846">
     <system-out>* def urlHome = 'https://open.spotify.com/' ............................... passed
 * def userid = '31pwtnpkdgtcxrud2smuljfb3qzi' ............................. passed
-* def token = 'Bearer BQAoAakC6yCMAxoWN_zv86v24G1swH4GlULBSaFSqq3DMMBGCpZRoq3EsZr_aPmsdOzCVM4ocT7i_nUzUZOT4tKUUWLfaYvF859E6bbtNL0hTahpZZdGubLed8-DbBn4A92LW2Uvl3rRkz7BR_otUN9TxuXUPkaEX4uHeeDTzvhadMSrQ-n36Kcvktp5zHL3ovwa834MkEtJHEXztEsemxUY-3qg2dJDBbT8oJUEH0J2UlcW00uUJRtqLCqqoUFqiVV8AS8LihBpq-M4CKg8lt646Q' . passed
+* def token = 'Bearer BQCSr_ndoCaXkU5v02WyCcf00aLba8m90ZX6sISuhNgxAXvO0uPNdXO5_DpzngncTQhitlbdlXjqYgwy7WU7W7pg7oS1etRlYNav7rtQJCPtBfexVcaHJMQxp_LWMfHSKRSGN4QlfMjXNIUegk7ICGg4ytLiN7AfmipEHw-VPNKd9GGud1RDVtP8jMX0zSGCGLKsrK8LiPoBGPagARv-cGj4dfdtf0Aop58oh0VNZoN505jdt9Ukg0gydzV3tvQKrBNricuu9hdnL2Z_OO_DOBV9UIqDAuFrWVcr3_rR2YSkT7Tl_oCXb0qTD6dosy_xq6OE' . passed
+* def requestbody = ....................................................... passed
+* def requestbody2 = ...................................................... passed
+Given url 'https://api.spotify.com/v1' .................................... passed
+And path '/me' ............................................................ passed
+And header Authorization = token .......................................... passed
+When method GET ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.com.spotify.KarateApi" name="Create Playlist" time="0.795689">
+    <system-out>* def urlHome = 'https://open.spotify.com/' ............................... passed
+* def userid = '31pwtnpkdgtcxrud2smuljfb3qzi' ............................. passed
+* def token = 'Bearer BQCSr_ndoCaXkU5v02WyCcf00aLba8m90ZX6sISuhNgxAXvO0uPNdXO5_DpzngncTQhitlbdlXjqYgwy7WU7W7pg7oS1etRlYNav7rtQJCPtBfexVcaHJMQxp_LWMfHSKRSGN4QlfMjXNIUegk7ICGg4ytLiN7AfmipEHw-VPNKd9GGud1RDVtP8jMX0zSGCGLKsrK8LiPoBGPagARv-cGj4dfdtf0Aop58oh0VNZoN505jdt9Ukg0gydzV3tvQKrBNricuu9hdnL2Z_OO_DOBV9UIqDAuFrWVcr3_rR2YSkT7Tl_oCXb0qTD6dosy_xq6OE' . passed
+* def requestbody = ....................................................... passed
+* def requestbody2 = ...................................................... passed
+Given url 'https://api.spotify.com/v1' .................................... passed
+And path '/me' ............................................................ passed
+And header Authorization = token .......................................... passed
+When method GET ........................................................... passed
+* def urlHome = 'https://open.spotify.com/' ............................... passed
+* def userid = '31pwtnpkdgtcxrud2smuljfb3qzi' ............................. passed
+* def token = 'Bearer BQCSr_ndoCaXkU5v02WyCcf00aLba8m90ZX6sISuhNgxAXvO0uPNdXO5_DpzngncTQhitlbdlXjqYgwy7WU7W7pg7oS1etRlYNav7rtQJCPtBfexVcaHJMQxp_LWMfHSKRSGN4QlfMjXNIUegk7ICGg4ytLiN7AfmipEHw-VPNKd9GGud1RDVtP8jMX0zSGCGLKsrK8LiPoBGPagARv-cGj4dfdtf0Aop58oh0VNZoN505jdt9Ukg0gydzV3tvQKrBNricuu9hdnL2Z_OO_DOBV9UIqDAuFrWVcr3_rR2YSkT7Tl_oCXb0qTD6dosy_xq6OE' . passed
+* def requestbody = ....................................................... passed
+* def requestbody2 = ...................................................... passed
+Given url 'https://api.spotify.com/v1' .................................... passed
+And path '/users/'+userid+'/playlists' .................................... passed
+And header Authorization = token .......................................... passed
+And request requestbody ................................................... passed
+When method POST .......................................................... passed
+And def playlistid = response.id .......................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.com.spotify.KarateApi" name="Search item" time="0.386174">
+    <system-out>* def urlHome = 'https://open.spotify.com/' ............................... passed
+* def userid = '31pwtnpkdgtcxrud2smuljfb3qzi' ............................. passed
+* def token = 'Bearer BQCSr_ndoCaXkU5v02WyCcf00aLba8m90ZX6sISuhNgxAXvO0uPNdXO5_DpzngncTQhitlbdlXjqYgwy7WU7W7pg7oS1etRlYNav7rtQJCPtBfexVcaHJMQxp_LWMfHSKRSGN4QlfMjXNIUegk7ICGg4ytLiN7AfmipEHw-VPNKd9GGud1RDVtP8jMX0zSGCGLKsrK8LiPoBGPagARv-cGj4dfdtf0Aop58oh0VNZoN505jdt9Ukg0gydzV3tvQKrBNricuu9hdnL2Z_OO_DOBV9UIqDAuFrWVcr3_rR2YSkT7Tl_oCXb0qTD6dosy_xq6OE' . passed
+* def requestbody = ....................................................... passed
+* def requestbody2 = ...................................................... passed
+Given url 'https://api.spotify.com/v1' .................................... passed
+And path '/me' ............................................................ passed
+And header Authorization = token .......................................... passed
+When method GET ........................................................... passed
+* def urlHome = 'https://open.spotify.com/' ............................... passed
+* def userid = '31pwtnpkdgtcxrud2smuljfb3qzi' ............................. passed
+* def token = 'Bearer BQCSr_ndoCaXkU5v02WyCcf00aLba8m90ZX6sISuhNgxAXvO0uPNdXO5_DpzngncTQhitlbdlXjqYgwy7WU7W7pg7oS1etRlYNav7rtQJCPtBfexVcaHJMQxp_LWMfHSKRSGN4QlfMjXNIUegk7ICGg4ytLiN7AfmipEHw-VPNKd9GGud1RDVtP8jMX0zSGCGLKsrK8LiPoBGPagARv-cGj4dfdtf0Aop58oh0VNZoN505jdt9Ukg0gydzV3tvQKrBNricuu9hdnL2Z_OO_DOBV9UIqDAuFrWVcr3_rR2YSkT7Tl_oCXb0qTD6dosy_xq6OE' . passed
+* def requestbody = ....................................................... passed
+* def requestbody2 = ...................................................... passed
+Given url 'https://api.spotify.com/v1' .................................... passed
+And path '/users/'+userid+'/playlists' .................................... passed
+And header Authorization = token .......................................... passed
+And request requestbody ................................................... passed
+When method POST .......................................................... passed
+And def playlistid = response.id .......................................... passed
+* def urlHome = 'https://open.spotify.com/' ............................... passed
+* def userid = '31pwtnpkdgtcxrud2smuljfb3qzi' ............................. passed
+* def token = 'Bearer BQCSr_ndoCaXkU5v02WyCcf00aLba8m90ZX6sISuhNgxAXvO0uPNdXO5_DpzngncTQhitlbdlXjqYgwy7WU7W7pg7oS1etRlYNav7rtQJCPtBfexVcaHJMQxp_LWMfHSKRSGN4QlfMjXNIUegk7ICGg4ytLiN7AfmipEHw-VPNKd9GGud1RDVtP8jMX0zSGCGLKsrK8LiPoBGPagARv-cGj4dfdtf0Aop58oh0VNZoN505jdt9Ukg0gydzV3tvQKrBNricuu9hdnL2Z_OO_DOBV9UIqDAuFrWVcr3_rR2YSkT7Tl_oCXb0qTD6dosy_xq6OE' . passed
+* def requestbody = ....................................................... passed
+* def requestbody2 = ...................................................... passed
+Given url 'https://api.spotify.com/v1' .................................... passed
+And path '/search' ........................................................ passed
+And header Authorization = token .......................................... passed
+And header Content-Type = 'application/json' .............................. passed
+And param q = 'Bohemian Rhapsody' ......................................... passed
+And param type = 'track' .................................................. passed
+When method GET ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.com.spotify.KarateApi" name="Add item" time="1.287845">
+    <system-out>* def urlHome = 'https://open.spotify.com/' ............................... passed
+* def userid = '31pwtnpkdgtcxrud2smuljfb3qzi' ............................. passed
+* def token = 'Bearer BQCSr_ndoCaXkU5v02WyCcf00aLba8m90ZX6sISuhNgxAXvO0uPNdXO5_DpzngncTQhitlbdlXjqYgwy7WU7W7pg7oS1etRlYNav7rtQJCPtBfexVcaHJMQxp_LWMfHSKRSGN4QlfMjXNIUegk7ICGg4ytLiN7AfmipEHw-VPNKd9GGud1RDVtP8jMX0zSGCGLKsrK8LiPoBGPagARv-cGj4dfdtf0Aop58oh0VNZoN505jdt9Ukg0gydzV3tvQKrBNricuu9hdnL2Z_OO_DOBV9UIqDAuFrWVcr3_rR2YSkT7Tl_oCXb0qTD6dosy_xq6OE' . passed
+* def requestbody = ....................................................... passed
+* def requestbody2 = ...................................................... passed
+Given url 'https://api.spotify.com/v1' .................................... passed
+And path '/me' ............................................................ passed
+And header Authorization = token .......................................... passed
+When method GET ........................................................... passed
+* def urlHome = 'https://open.spotify.com/' ............................... passed
+* def userid = '31pwtnpkdgtcxrud2smuljfb3qzi' ............................. passed
+* def token = 'Bearer BQCSr_ndoCaXkU5v02WyCcf00aLba8m90ZX6sISuhNgxAXvO0uPNdXO5_DpzngncTQhitlbdlXjqYgwy7WU7W7pg7oS1etRlYNav7rtQJCPtBfexVcaHJMQxp_LWMfHSKRSGN4QlfMjXNIUegk7ICGg4ytLiN7AfmipEHw-VPNKd9GGud1RDVtP8jMX0zSGCGLKsrK8LiPoBGPagARv-cGj4dfdtf0Aop58oh0VNZoN505jdt9Ukg0gydzV3tvQKrBNricuu9hdnL2Z_OO_DOBV9UIqDAuFrWVcr3_rR2YSkT7Tl_oCXb0qTD6dosy_xq6OE' . passed
+* def requestbody = ....................................................... passed
+* def requestbody2 = ...................................................... passed
+Given url 'https://api.spotify.com/v1' .................................... passed
+And path '/users/'+userid+'/playlists' .................................... passed
+And header Authorization = token .......................................... passed
+And request requestbody ................................................... passed
+When method POST .......................................................... passed
+And def playlistid = response.id .......................................... passed
+* def urlHome = 'https://open.spotify.com/' ............................... passed
+* def userid = '31pwtnpkdgtcxrud2smuljfb3qzi' ............................. passed
+* def token = 'Bearer BQCSr_ndoCaXkU5v02WyCcf00aLba8m90ZX6sISuhNgxAXvO0uPNdXO5_DpzngncTQhitlbdlXjqYgwy7WU7W7pg7oS1etRlYNav7rtQJCPtBfexVcaHJMQxp_LWMfHSKRSGN4QlfMjXNIUegk7ICGg4ytLiN7AfmipEHw-VPNKd9GGud1RDVtP8jMX0zSGCGLKsrK8LiPoBGPagARv-cGj4dfdtf0Aop58oh0VNZoN505jdt9Ukg0gydzV3tvQKrBNricuu9hdnL2Z_OO_DOBV9UIqDAuFrWVcr3_rR2YSkT7Tl_oCXb0qTD6dosy_xq6OE' . passed
+* def requestbody = ....................................................... passed
+* def requestbody2 = ...................................................... passed
+Given url 'https://api.spotify.com/v1' .................................... passed
+And path '/search' ........................................................ passed
+And header Authorization = token .......................................... passed
+And header Content-Type = 'application/json' .............................. passed
+And param q = 'Bohemian Rhapsody' ......................................... passed
+And param type = 'track' .................................................. passed
+When method GET ........................................................... passed
+* def urlHome = 'https://open.spotify.com/' ............................... passed
+* def userid = '31pwtnpkdgtcxrud2smuljfb3qzi' ............................. passed
+* def token = 'Bearer BQCSr_ndoCaXkU5v02WyCcf00aLba8m90ZX6sISuhNgxAXvO0uPNdXO5_DpzngncTQhitlbdlXjqYgwy7WU7W7pg7oS1etRlYNav7rtQJCPtBfexVcaHJMQxp_LWMfHSKRSGN4QlfMjXNIUegk7ICGg4ytLiN7AfmipEHw-VPNKd9GGud1RDVtP8jMX0zSGCGLKsrK8LiPoBGPagARv-cGj4dfdtf0Aop58oh0VNZoN505jdt9Ukg0gydzV3tvQKrBNricuu9hdnL2Z_OO_DOBV9UIqDAuFrWVcr3_rR2YSkT7Tl_oCXb0qTD6dosy_xq6OE' . passed
 * def requestbody = ....................................................... passed
 * def requestbody2 = ...................................................... passed
 * def callback = call read('KarateApi.feature@Create') .................... passed

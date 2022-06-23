@@ -1,0 +1,49 @@
+<testsuite failures="0" name="src/test/java/com/spotify/Faz2.feature" skipped="0" tests="1" time="58.642532">
+  <testcase classname="src.test.java.com.spotify.Faz2" name="1" time="58.642532">
+    <system-out>* configure driver = {type: 'chromedriver', executable:'src\\test\\resources\\chromedriver.exe'} . passed
+* def urlHome = 'https://open.spotify.com/' ............................... passed
+* def userid = '31pwtnpkdgtcxrud2smuljfb3qzi' ............................. passed
+* def songid = '0nPb5PLTXAetNCpi0PyGGO' ................................... passed
+* def token = 'Bearer BQAy1R31Rz9cxQYO4rDBTI5CMzQPdj_PfmTsJynNzQxpbcNxZxLZIsCbOwDpSNu1dhCfq4TFl_fXtuHjFMErDNCHObRN-ARpGNZJyb0Mmd6GLxaFnb7Hqty390Ngm1tdjTZ_uqtP3TGQAeO4UCxITlMKRy8mn6m69C6jEEH1JukmH02x7vE4VIuvyqYLrK1oYQvR7Y_tg0Rs6vMrXDCEpiOBu6pWtSkkvxgjQdERF08E1VnVmgZCihpAgsaP9q6w8HoMcUqBYrMRaB5hZUwjiHOvwedQ' . passed
+* def requestbody = ....................................................... passed
+* def requestbody2 = ...................................................... passed
+Given driver "https://open.spotify.com/" .................................. passed
+And maximize() ............................................................ passed
+And delay(2000) ........................................................... passed
+When click("//div[@class='ButtonInner-sc-14ud5tc-0 iebPZv encore-inverted-light-set']") . passed
+And delay(2000) ........................................................... passed
+When click("//input[@id='login-username']") ............................... passed
+And input("//input[@id='login-username']" , 'emre.ozturk@testinium.com') .. passed
+And delay(3000) ........................................................... passed
+And click("//input[@id='login-password']") ................................ passed
+And input("//input[@id='login-password']" , '8898emre') ................... passed
+And delay(2000) ........................................................... passed
+When click("//div[@class='ButtonInner-sc-14ud5tc-0 lbsIMA encore-bright-accent-set']") . passed
+And delay(8000) ........................................................... passed
+And url 'https://api.spotify.com/v1' ...................................... passed
+And path '/users/'+userid+'/playlists' .................................... passed
+And header Authorization = token .......................................... passed
+And request requestbody ................................................... passed
+When method POST .......................................................... passed
+And def playlistid = response.id .......................................... passed
+And url 'https://api.spotify.com/v1' ...................................... passed
+And path '/playlists/'+playlistid+'/tracks' ............................... passed
+And header Authorization = token .......................................... passed
+And header Content-Type = 'application/json' .............................. passed
+And request requestbody2 .................................................. passed
+When method POST .......................................................... passed
+And refresh() ............................................................. passed
+And delay(8000) ........................................................... passed
+And click("//div[@class='AINMAUImkAYJd4ertQxy']") ......................... passed
+And delay(2000) ........................................................... passed
+And click("//button[@class='Button-qlcn5g-0 iaAUvZ']") .................... passed
+And delay(20000) .......................................................... passed
+And url 'https://api.spotify.com/v1' ...................................... passed
+And path 'me/player/currently-playing' .................................... passed
+And header Authorization = token .......................................... passed
+And method GET ............................................................ passed
+* def matchsong = karate.jsonPath(response,"$.['item'].['name']") ......... passed
+And match matchsong == 'The Final Countdown' .............................. passed
+Then print 'Song Matched' ................................................. passed</system-out>
+  </testcase>
+</testsuite>

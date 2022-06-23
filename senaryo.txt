@@ -1,0 +1,9 @@
+Siteye giriş yapılır.
+Best Songs of all time playlisti takip edilir. (Api)
+Playlistteki şarkılar getirilir. (Api)
+Playlistteki şarkılar sırasıyla beğenilen şarkılara eklenir.
+Search barında Camila Cabello sanatçısı aratılır.
+Sayfada ilgili bölüme daha rahat tıklayabilmek için scroll yapılır.
+Camila Cabello sanatçısı takip edilir(Api)
+Havana şarkısı Mentorlabs Faz2 listesine eklenir.
+Oturum kapatılır, çıkış yapılır.

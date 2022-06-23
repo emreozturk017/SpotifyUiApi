@@ -13,7 +13,7 @@
     <div id="visualization"></div>
     <script>
 var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-1"}]);
-var items = new vis.DataSet([{"id":1,"group":1,"content":"KarateUi[1:7]","start":615,"end":48156,"title":"KarateUi[1:7] 02:00:00.615-02:00:48.156"}]);
+var items = new vis.DataSet([{"id":1,"group":1,"content":"KarateApi[1:27]","start":467,"end":1530,"title":"KarateApi[1:27] 02:00:00.467-02:00:01.530 get playlist"},{"id":2,"group":1,"content":"KarateApi[2:37]","start":1538,"end":2334,"title":"KarateApi[2:37] 02:00:01.538-02:00:02.334 Create Playlist"},{"id":3,"group":1,"content":"KarateApi[3:46]","start":2334,"end":2728,"title":"KarateApi[3:46] 02:00:02.334-02:00:02.728 Search item"},{"id":4,"group":1,"content":"KarateApi[4:56]","start":2728,"end":4013,"title":"KarateApi[4:56] 02:00:02.728-02:00:04.013 Add item"}]);
 var container = document.getElementById('visualization');
 var timeline = new vis.Timeline(container);
 timeline.setOptions({ groupOrder: 'content' });

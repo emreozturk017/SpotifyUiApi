@@ -1,8 +1,58 @@
-09:54:10.217 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-09:49:50.963 request:
+09:28:28.555 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+09:28:29.091 request:
+1 > GET https://api.spotify.com/v1/me
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer BQCSr_ndoCaXkU5v02WyCcf00aLba8m90ZX6sISuhNgxAXvO0uPNdXO5_DpzngncTQhitlbdlXjqYgwy7WU7W7pg7oS1etRlYNav7rtQJCPtBfexVcaHJMQxp_LWMfHSKRSGN4QlfMjXNIUegk7ICGg4ytLiN7AfmipEHw-VPNKd9GGud1RDVtP8jMX0zSGCGLKsrK8LiPoBGPagARv-cGj4dfdtf0Aop58oh0VNZoN505jdt9Ukg0gydzV3tvQKrBNricuu9hdnL2Z_OO_DOBV9UIqDAuFrWVcr3_rR2YSkT7Tl_oCXb0qTD6dosy_xq6OE
+1 > Connection: Keep-Alive
+1 > Host: api.spotify.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_331)
+
+09:28:29.618 response time in milliseconds: 516,93
+1 < 200
+1 < Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+1 < Transfer-Encoding: chunked
+1 < Via: HTTP/2 edgeproxy, 1.1 google
+1 < access-control-allow-credentials: true
+1 < access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+1 < access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+1 < access-control-allow-origin: *
+1 < access-control-max-age: 604800
+1 < cache-control: private, max-age=0
+1 < content-type: application/json; charset=utf-8
+1 < date: Thu, 23 Jun 2022 06:28:26 GMT
+1 < server: envoy
+1 < strict-transport-security: max-age=31536000
+1 < vary: Authorization
+1 < x-content-type-options: nosniff
+1 < x-robots-tag: noindex, nofollow
+{
+  "country" : "TR",
+  "display_name" : "Emre",
+  "email" : "emre.ozturk@testinium.com",
+  "explicit_content" : {
+    "filter_enabled" : false,
+    "filter_locked" : false
+  },
+  "external_urls" : {
+    "spotify" : "https://open.spotify.com/user/31pwtnpkdgtcxrud2smuljfb3qzi"
+  },
+  "followers" : {
+    "href" : null,
+    "total" : 0
+  },
+  "href" : "https://api.spotify.com/v1/users/31pwtnpkdgtcxrud2smuljfb3qzi",
+  "id" : "31pwtnpkdgtcxrud2smuljfb3qzi",
+  "images" : [ ],
+  "product" : "open",
+  "type" : "user",
+  "uri" : "spotify:user:31pwtnpkdgtcxrud2smuljfb3qzi"
+}
+
+09:28:29.626 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+09:28:29.642 request:
 1 > POST https://api.spotify.com/v1/users/31pwtnpkdgtcxrud2smuljfb3qzi/playlists
 1 > Accept-Encoding: gzip,deflate
-1 > Authorization: Bearer BQAoAakC6yCMAxoWN_zv86v24G1swH4GlULBSaFSqq3DMMBGCpZRoq3EsZr_aPmsdOzCVM4ocT7i_nUzUZOT4tKUUWLfaYvF859E6bbtNL0hTahpZZdGubLed8-DbBn4A92LW2Uvl3rRkz7BR_otUN9TxuXUPkaEX4uHeeDTzvhadMSrQ-n36Kcvktp5zHL3ovwa834MkEtJHEXztEsemxUY-3qg2dJDBbT8oJUEH0J2UlcW00uUJRtqLCqqoUFqiVV8AS8LihBpq-M4CKg8lt646Q
+1 > Authorization: Bearer BQCSr_ndoCaXkU5v02WyCcf00aLba8m90ZX6sISuhNgxAXvO0uPNdXO5_DpzngncTQhitlbdlXjqYgwy7WU7W7pg7oS1etRlYNav7rtQJCPtBfexVcaHJMQxp_LWMfHSKRSGN4QlfMjXNIUegk7ICGg4ytLiN7AfmipEHw-VPNKd9GGud1RDVtP8jMX0zSGCGLKsrK8LiPoBGPagARv-cGj4dfdtf0Aop58oh0VNZoN505jdt9Ukg0gydzV3tvQKrBNricuu9hdnL2Z_OO_DOBV9UIqDAuFrWVcr3_rR2YSkT7Tl_oCXb0qTD6dosy_xq6OE
 1 > Connection: Keep-Alive
 1 > Content-Length: 69
 1 > Content-Type: application/json; charset=UTF-8
@@ -10,7 +60,7 @@
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_331)
 {"name":"ApiTestPlaylist","description":"testSuccess","public":false}
 
-09:49:51.870 response time in milliseconds: 900,40
+09:28:30.406 response time in milliseconds: 772,85
 1 < 201
 1 < Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
 1 < Transfer-Encoding: chunked
@@ -22,8 +72,8 @@
 1 < access-control-max-age: 604800
 1 < cache-control: private, max-age=0
 1 < content-type: application/json; charset=utf-8
-1 < date: Wed, 15 Jun 2022 06:49:50 GMT
-1 < location: https://api.spotify.com/v1/playlists/6j06J7eHbgOyDluKdte3PW
+1 < date: Thu, 23 Jun 2022 06:28:27 GMT
+1 < location: https://api.spotify.com/v1/playlists/1wMWykzcjV0pM5DV2o4QUO
 1 < server: envoy
 1 < strict-transport-security: max-age=31536000
 1 < x-content-type-options: nosniff
@@ -32,14 +82,14 @@
   "collaborative" : false,
   "description" : "testSuccess",
   "external_urls" : {
-    "spotify" : "https://open.spotify.com/playlist/6j06J7eHbgOyDluKdte3PW"
+    "spotify" : "https://open.spotify.com/playlist/1wMWykzcjV0pM5DV2o4QUO"
   },
   "followers" : {
     "href" : null,
     "total" : 0
   },
-  "href" : "https://api.spotify.com/v1/playlists/6j06J7eHbgOyDluKdte3PW",
-  "id" : "6j06J7eHbgOyDluKdte3PW",
+  "href" : "https://api.spotify.com/v1/playlists/1wMWykzcjV0pM5DV2o4QUO",
+  "id" : "1wMWykzcjV0pM5DV2o4QUO",
   "images" : [ ],
   "name" : "ApiTestPlaylist",
   "owner" : {
@@ -54,9 +104,9 @@
   },
   "primary_color" : null,
   "public" : false,
-  "snapshot_id" : "MSxmOWRiYWIyNWI0M2M0YmJkMDc0YTliOGM0MzFhYzdhYWEwYTI3ZGJi",
+  "snapshot_id" : "MSxhZmEyNzU0Mjg2ZWYwM2RjNzIyMWEzODkwZjcxMzgyMmUwNWFlYzFl",
   "tracks" : {
-    "href" : "https://api.spotify.com/v1/playlists/6j06J7eHbgOyDluKdte3PW/tracks",
+    "href" : "https://api.spotify.com/v1/playlists/1wMWykzcjV0pM5DV2o4QUO/tracks",
     "items" : [ ],
     "limit" : 100,
     "next" : null,
@@ -65,70 +115,20 @@
     "total" : 0
   },
   "type" : "playlist",
-  "uri" : "spotify:playlist:6j06J7eHbgOyDluKdte3PW"
+  "uri" : "spotify:playlist:1wMWykzcjV0pM5DV2o4QUO"
 }
 
-09:49:51.908 request:
-1 > POST https://api.spotify.com/v1/playlists/6j06J7eHbgOyDluKdte3PW/tracks
-1 > Accept-Encoding: gzip,deflate
-1 > Authorization: Bearer BQAoAakC6yCMAxoWN_zv86v24G1swH4GlULBSaFSqq3DMMBGCpZRoq3EsZr_aPmsdOzCVM4ocT7i_nUzUZOT4tKUUWLfaYvF859E6bbtNL0hTahpZZdGubLed8-DbBn4A92LW2Uvl3rRkz7BR_otUN9TxuXUPkaEX4uHeeDTzvhadMSrQ-n36Kcvktp5zHL3ovwa834MkEtJHEXztEsemxUY-3qg2dJDBbT8oJUEH0J2UlcW00uUJRtqLCqqoUFqiVV8AS8LihBpq-M4CKg8lt646Q
-1 > Connection: Keep-Alive
-1 > Content-Length: 62
-1 > Content-Type: application/json; charset=UTF-8
-1 > Host: api.spotify.com
-1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_331)
-{"uris":["spotify:track:3z8h0TU7ReDPLIbEnYhWZb"],"position":0}
-
-09:49:52.398 response time in milliseconds: 489,04
-1 < 201
-1 < Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-1 < Transfer-Encoding: chunked
-1 < Via: HTTP/2 edgeproxy, 1.1 google
-1 < access-control-allow-credentials: true
-1 < access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
-1 < access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
-1 < access-control-allow-origin: *
-1 < access-control-max-age: 604800
-1 < cache-control: private, max-age=0
-1 < content-type: application/json; charset=utf-8
-1 < date: Wed, 15 Jun 2022 06:49:51 GMT
-1 < server: envoy
-1 < strict-transport-security: max-age=31536000
-1 < x-content-type-options: nosniff
-1 < x-robots-tag: noindex, nofollow
-{
-  "snapshot_id" : "Miw2MTc0MjBmMWYxMjFiMmViNjg5MWU1YWNlMzcyNTgzNzNlYTMzY2Iz"
-}
-
-tcxrud2smuljfb3qzi"
-  },
-  "primary_color" : null,
-  "public" : false,
-  "snapshot_id" : "MSw2YzM2ZmZkZTRlODhiMThlMDM0MzNmY2ZmZmI4YmUxODA4M2U2ZWNi",
-  "tracks" : {
-    "href" : "https://api.spotify.com/v1/playlists/1nh23VS7tPf0X5wyHhvK8w/tracks",
-    "items" : [ ],
-    "limit" : 100,
-    "next" : null,
-    "offset" : 0,
-    "previous" : null,
-    "total" : 0
-  },
-  "type" : "playlist",
-  "uri" : "spotify:playlist:1nh23VS7tPf0X5wyHhvK8w"
-}
-
-09:49:18.073 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-09:49:18.080 request:
+09:28:30.422 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+09:28:30.436 request:
 1 > GET https://api.spotify.com/v1/search?q=Bohemian+Rhapsody&type=track
 1 > Accept-Encoding: gzip,deflate
-1 > Authorization: Bearer BQAoAakC6yCMAxoWN_zv86v24G1swH4GlULBSaFSqq3DMMBGCpZRoq3EsZr_aPmsdOzCVM4ocT7i_nUzUZOT4tKUUWLfaYvF859E6bbtNL0hTahpZZdGubLed8-DbBn4A92LW2Uvl3rRkz7BR_otUN9TxuXUPkaEX4uHeeDTzvhadMSrQ-n36Kcvktp5zHL3ovwa834MkEtJHEXztEsemxUY-3qg2dJDBbT8oJUEH0J2UlcW00uUJRtqLCqqoUFqiVV8AS8LihBpq-M4CKg8lt646Q
+1 > Authorization: Bearer BQCSr_ndoCaXkU5v02WyCcf00aLba8m90ZX6sISuhNgxAXvO0uPNdXO5_DpzngncTQhitlbdlXjqYgwy7WU7W7pg7oS1etRlYNav7rtQJCPtBfexVcaHJMQxp_LWMfHSKRSGN4QlfMjXNIUegk7ICGg4ytLiN7AfmipEHw-VPNKd9GGud1RDVtP8jMX0zSGCGLKsrK8LiPoBGPagARv-cGj4dfdtf0Aop58oh0VNZoN505jdt9Ukg0gydzV3tvQKrBNricuu9hdnL2Z_OO_DOBV9UIqDAuFrWVcr3_rR2YSkT7Tl_oCXb0qTD6dosy_xq6OE
 1 > Connection: Keep-Alive
 1 > Content-Type: application/json
 1 > Host: api.spotify.com
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_331)
 
-09:49:18.454 response time in milliseconds: 355,77
+09:28:30.798 response time in milliseconds: 357,38
 1 < 200
 1 < Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
 1 < Transfer-Encoding: chunked
@@ -140,7 +140,7 @@ tcxrud2smuljfb3qzi"
 1 < access-control-max-age: 604800
 1 < cache-control: public, max-age=7200
 1 < content-type: application/json; charset=utf-8
-1 < date: Wed, 15 Jun 2022 06:49:17 GMT
+1 < date: Thu, 23 Jun 2022 06:28:27 GMT
 1 < server: envoy
 1 < strict-transport-security: max-age=31536000
 1 < x-content-type-options: nosniff
@@ -211,7 +211,7 @@ tcxrud2smuljfb3qzi"
       "id" : "4u7EnebtmKWzUH433cf5Qv",
       "is_local" : false,
       "name" : "Bohemian Rhapsody - Remastered 2011",
-      "popularity" : 81,
+      "popularity" : 82,
       "preview_url" : null,
       "track_number" : 11,
       "type" : "track",
@@ -279,7 +279,7 @@ tcxrud2smuljfb3qzi"
       "id" : "3z8h0TU7ReDPLIbEnYhWZb",
       "is_local" : false,
       "name" : "Bohemian Rhapsody",
-      "popularity" : 74,
+      "popularity" : 75,
       "preview_url" : null,
       "track_number" : 7,
       "type" : "track",
@@ -415,7 +415,7 @@ tcxrud2smuljfb3qzi"
       "id" : "7iAqvWLgZzXvH38lA06QZg",
       "is_local" : false,
       "name" : "I Want To Break Free",
-      "popularity" : 70,
+      "popularity" : 71,
       "preview_url" : null,
       "track_number" : 13,
       "type" : "track",
@@ -510,7 +510,7 @@ tcxrud2smuljfb3qzi"
       "id" : "68eeHVg1x99y5PzBk2j7GD",
       "is_local" : false,
       "name" : "Bohemian Rhapsody (feat. The White Buffalo, Billy Valentine & Franky Perez) - From Sons of Anarchy",
-      "popularity" : 47,
+      "popularity" : 48,
       "preview_url" : "https://p.scdn.co/mp3-preview/4505049946ac83bf522d8f811db7dbb73e3113f0?cid=774b29d4f13844c495f206cafdad9c86",
       "track_number" : 1,
       "type" : "track",
@@ -646,7 +646,7 @@ tcxrud2smuljfb3qzi"
       "id" : "64uO28GXj2aA7DYcvnEoCl",
       "is_local" : false,
       "name" : "Bohemian Rhapsody - Live",
-      "popularity" : 40,
+      "popularity" : 41,
       "preview_url" : null,
       "track_number" : 9,
       "type" : "track",
@@ -857,74 +857,6 @@ tcxrud2smuljfb3qzi"
       "uri" : "spotify:track:1XzJrnQz8Hzv6abTC5qn8U"
     }, {
       "album" : {
-        "album_type" : "album",
-        "artists" : [ {
-          "external_urls" : {
-            "spotify" : "https://open.spotify.com/artist/5bHjVR4F2Tfq4Ha6x7K6wU"
-          },
-          "href" : "https://api.spotify.com/v1/artists/5bHjVR4F2Tfq4Ha6x7K6wU",
-          "id" : "5bHjVR4F2Tfq4Ha6x7K6wU",
-          "name" : "Rockabye Baby!",
-          "type" : "artist",
-          "uri" : "spotify:artist:5bHjVR4F2Tfq4Ha6x7K6wU"
-        } ],
-        "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
-        "external_urls" : {
-          "spotify" : "https://open.spotify.com/album/7GWzwOQTOGlyqwUOJSWPCN"
-        },
-        "href" : "https://api.spotify.com/v1/albums/7GWzwOQTOGlyqwUOJSWPCN",
-        "id" : "7GWzwOQTOGlyqwUOJSWPCN",
-        "images" : [ {
-          "height" : 640,
-          "url" : "https://i.scdn.co/image/ab67616d0000b27366ef3d044e02a9fb82a2db82",
-          "width" : 640
-        }, {
-          "height" : 300,
-          "url" : "https://i.scdn.co/image/ab67616d00001e0266ef3d044e02a9fb82a2db82",
-          "width" : 300
-        }, {
-          "height" : 64,
-          "url" : "https://i.scdn.co/image/ab67616d0000485166ef3d044e02a9fb82a2db82",
-          "width" : 64
-        } ],
-        "name" : "Lullaby Renditions of Queen",
-        "release_date" : "2009-05-19",
-        "release_date_precision" : "day",
-        "total_tracks" : 12,
-        "type" : "album",
-        "uri" : "spotify:album:7GWzwOQTOGlyqwUOJSWPCN"
-      },
-      "artists" : [ {
-        "external_urls" : {
-          "spotify" : "https://open.spotify.com/artist/5bHjVR4F2Tfq4Ha6x7K6wU"
-        },
-        "href" : "https://api.spotify.com/v1/artists/5bHjVR4F2Tfq4Ha6x7K6wU",
-        "id" : "5bHjVR4F2Tfq4Ha6x7K6wU",
-        "name" : "Rockabye Baby!",
-        "type" : "artist",
-        "uri" : "spotify:artist:5bHjVR4F2Tfq4Ha6x7K6wU"
-      } ],
-      "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
-      "disc_number" : 1,
-      "duration_ms" : 274280,
-      "explicit" : false,
-      "external_ids" : {
-        "isrc" : "USEWC0882101"
-      },
-      "external_urls" : {
-        "spotify" : "https://open.spotify.com/track/2OWOkkAQv7KFlScZymrfZ4"
-      },
-      "href" : "https://api.spotify.com/v1/tracks/2OWOkkAQv7KFlScZymrfZ4",
-      "id" : "2OWOkkAQv7KFlScZymrfZ4",
-      "is_local" : false,
-      "name" : "Bohemian Rhapsody",
-      "popularity" : 49,
-      "preview_url" : "https://p.scdn.co/mp3-preview/32ee4b303287b090083f651d3c634f63bd7535d9?cid=774b29d4f13844c495f206cafdad9c86",
-      "track_number" : 1,
-      "type" : "track",
-      "uri" : "spotify:track:2OWOkkAQv7KFlScZymrfZ4"
-    }, {
-      "album" : {
         "album_type" : "single",
         "artists" : [ {
           "external_urls" : {
@@ -1004,142 +936,6 @@ tcxrud2smuljfb3qzi"
           "type" : "artist",
           "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
         } ],
-        "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
-        "external_urls" : {
-          "spotify" : "https://open.spotify.com/album/6i6folBtxKV28WX3msQ4FE"
-        },
-        "href" : "https://api.spotify.com/v1/albums/6i6folBtxKV28WX3msQ4FE",
-        "id" : "6i6folBtxKV28WX3msQ4FE",
-        "images" : [ {
-          "height" : 640,
-          "url" : "https://i.scdn.co/image/ab67616d0000b273e8b066f70c206551210d902b",
-          "width" : 640
-        }, {
-          "height" : 300,
-          "url" : "https://i.scdn.co/image/ab67616d00001e02e8b066f70c206551210d902b",
-          "width" : 300
-        }, {
-          "height" : 64,
-          "url" : "https://i.scdn.co/image/ab67616d00004851e8b066f70c206551210d902b",
-          "width" : 64
-        } ],
-        "name" : "Bohemian Rhapsody (The Original Soundtrack)",
-        "release_date" : "2018-10-19",
-        "release_date_precision" : "day",
-        "total_tracks" : 22,
-        "type" : "album",
-        "uri" : "spotify:album:6i6folBtxKV28WX3msQ4FE"
-      },
-      "artists" : [ {
-        "external_urls" : {
-          "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
-        },
-        "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
-        "id" : "1dfeR4HaWDbWqFHLkxsg1d",
-        "name" : "Queen",
-        "type" : "artist",
-        "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
-      } ],
-      "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
-      "disc_number" : 1,
-      "duration_ms" : 217824,
-      "explicit" : false,
-      "external_ids" : {
-        "isrc" : "GBUM71805977"
-      },
-      "external_urls" : {
-        "spotify" : "https://open.spotify.com/track/3INsYP1Y8GG4qJvBsKCdXC"
-      },
-      "href" : "https://api.spotify.com/v1/tracks/3INsYP1Y8GG4qJvBsKCdXC",
-      "id" : "3INsYP1Y8GG4qJvBsKCdXC",
-      "is_local" : false,
-      "name" : "Don't Stop Me Now - ...Revisited",
-      "popularity" : 68,
-      "preview_url" : null,
-      "track_number" : 21,
-      "type" : "track",
-      "uri" : "spotify:track:3INsYP1Y8GG4qJvBsKCdXC"
-    }, {
-      "album" : {
-        "album_type" : "compilation",
-        "artists" : [ {
-          "external_urls" : {
-            "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
-          },
-          "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
-          "id" : "0LyfQWJT6nXafLPZqxe9Of",
-          "name" : "Various Artists",
-          "type" : "artist",
-          "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
-        } ],
-        "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
-        "external_urls" : {
-          "spotify" : "https://open.spotify.com/album/26pN2HAuYxPHumuRghBFip"
-        },
-        "href" : "https://api.spotify.com/v1/albums/26pN2HAuYxPHumuRghBFip",
-        "id" : "26pN2HAuYxPHumuRghBFip",
-        "images" : [ {
-          "height" : 640,
-          "url" : "https://i.scdn.co/image/ab67616d0000b27307735c7591399cd26c09b211",
-          "width" : 640
-        }, {
-          "height" : 300,
-          "url" : "https://i.scdn.co/image/ab67616d00001e0207735c7591399cd26c09b211",
-          "width" : 300
-        }, {
-          "height" : 64,
-          "url" : "https://i.scdn.co/image/ab67616d0000485107735c7591399cd26c09b211",
-          "width" : 64
-        } ],
-        "name" : "Live Aid (Live, 13th July 1985)",
-        "release_date" : "1985",
-        "release_date_precision" : "year",
-        "total_tracks" : 111,
-        "type" : "album",
-        "uri" : "spotify:album:26pN2HAuYxPHumuRghBFip"
-      },
-      "artists" : [ {
-        "external_urls" : {
-          "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
-        },
-        "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
-        "id" : "1dfeR4HaWDbWqFHLkxsg1d",
-        "name" : "Queen",
-        "type" : "artist",
-        "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
-      } ],
-      "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
-      "disc_number" : 2,
-      "duration_ms" : 390121,
-      "explicit" : false,
-      "external_ids" : {
-        "isrc" : "UK6821836636"
-      },
-      "external_urls" : {
-        "spotify" : "https://open.spotify.com/track/06yFyGZK1lj7D91iYTRkL9"
-      },
-      "href" : "https://api.spotify.com/v1/tracks/06yFyGZK1lj7D91iYTRkL9",
-      "id" : "06yFyGZK1lj7D91iYTRkL9",
-      "is_local" : false,
-      "name" : "Bohemian Rhapsody / Radio Gaga - Live at Live Aid, Wembley Stadium, 13th July 1985",
-      "popularity" : 34,
-      "preview_url" : "https://p.scdn.co/mp3-preview/2bfdf3e45428cfb786c8df9648bf35e692e4e465?cid=774b29d4f13844c495f206cafdad9c86",
-      "track_number" : 7,
-      "type" : "track",
-      "uri" : "spotify:track:06yFyGZK1lj7D91iYTRkL9"
-    }, {
-      "album" : {
-        "album_type" : "album",
-        "artists" : [ {
-          "external_urls" : {
-            "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
-          },
-          "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
-          "id" : "1dfeR4HaWDbWqFHLkxsg1d",
-          "name" : "Queen",
-          "type" : "artist",
-          "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
-        } ],
         "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "UY", "UZ", "VC", "VE", "VN", "WS", "XK", "ZA", "ZM", "ZW" ],
         "external_urls" : {
           "spotify" : "https://open.spotify.com/album/0pipZo4jBQ2hA4HphdFccg"
@@ -1190,11 +986,147 @@ tcxrud2smuljfb3qzi"
       "id" : "2XbcujvemK0hGh0Ob4HAXQ",
       "is_local" : false,
       "name" : "Bohemian Rhapsody - Live At Wembley Stadium / July 1986",
-      "popularity" : 51,
+      "popularity" : 52,
       "preview_url" : null,
       "track_number" : 7,
       "type" : "track",
       "uri" : "spotify:track:2XbcujvemK0hGh0Ob4HAXQ"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/5bHjVR4F2Tfq4Ha6x7K6wU"
+          },
+          "href" : "https://api.spotify.com/v1/artists/5bHjVR4F2Tfq4Ha6x7K6wU",
+          "id" : "5bHjVR4F2Tfq4Ha6x7K6wU",
+          "name" : "Rockabye Baby!",
+          "type" : "artist",
+          "uri" : "spotify:artist:5bHjVR4F2Tfq4Ha6x7K6wU"
+        } ],
+        "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/7GWzwOQTOGlyqwUOJSWPCN"
+        },
+        "href" : "https://api.spotify.com/v1/albums/7GWzwOQTOGlyqwUOJSWPCN",
+        "id" : "7GWzwOQTOGlyqwUOJSWPCN",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b27366ef3d044e02a9fb82a2db82",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e0266ef3d044e02a9fb82a2db82",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d0000485166ef3d044e02a9fb82a2db82",
+          "width" : 64
+        } ],
+        "name" : "Lullaby Renditions of Queen",
+        "release_date" : "2009-05-19",
+        "release_date_precision" : "day",
+        "total_tracks" : 12,
+        "type" : "album",
+        "uri" : "spotify:album:7GWzwOQTOGlyqwUOJSWPCN"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5bHjVR4F2Tfq4Ha6x7K6wU"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5bHjVR4F2Tfq4Ha6x7K6wU",
+        "id" : "5bHjVR4F2Tfq4Ha6x7K6wU",
+        "name" : "Rockabye Baby!",
+        "type" : "artist",
+        "uri" : "spotify:artist:5bHjVR4F2Tfq4Ha6x7K6wU"
+      } ],
+      "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+      "disc_number" : 1,
+      "duration_ms" : 274280,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USEWC0882101"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2OWOkkAQv7KFlScZymrfZ4"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2OWOkkAQv7KFlScZymrfZ4",
+      "id" : "2OWOkkAQv7KFlScZymrfZ4",
+      "is_local" : false,
+      "name" : "Bohemian Rhapsody",
+      "popularity" : 50,
+      "preview_url" : "https://p.scdn.co/mp3-preview/32ee4b303287b090083f651d3c634f63bd7535d9?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:2OWOkkAQv7KFlScZymrfZ4"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+          "id" : "1dfeR4HaWDbWqFHLkxsg1d",
+          "name" : "Queen",
+          "type" : "artist",
+          "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+        } ],
+        "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6i6folBtxKV28WX3msQ4FE"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6i6folBtxKV28WX3msQ4FE",
+        "id" : "6i6folBtxKV28WX3msQ4FE",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273e8b066f70c206551210d902b",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02e8b066f70c206551210d902b",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851e8b066f70c206551210d902b",
+          "width" : 64
+        } ],
+        "name" : "Bohemian Rhapsody (The Original Soundtrack)",
+        "release_date" : "2018-10-19",
+        "release_date_precision" : "day",
+        "total_tracks" : 22,
+        "type" : "album",
+        "uri" : "spotify:album:6i6folBtxKV28WX3msQ4FE"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+        "id" : "1dfeR4HaWDbWqFHLkxsg1d",
+        "name" : "Queen",
+        "type" : "artist",
+        "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+      } ],
+      "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+      "disc_number" : 1,
+      "duration_ms" : 217824,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBUM71805977"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3INsYP1Y8GG4qJvBsKCdXC"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3INsYP1Y8GG4qJvBsKCdXC",
+      "id" : "3INsYP1Y8GG4qJvBsKCdXC",
+      "is_local" : false,
+      "name" : "Don't Stop Me Now - ...Revisited",
+      "popularity" : 69,
+      "preview_url" : null,
+      "track_number" : 21,
+      "type" : "track",
+      "uri" : "spotify:track:3INsYP1Y8GG4qJvBsKCdXC"
     }, {
       "album" : {
         "album_type" : "album",
@@ -1263,6 +1195,74 @@ tcxrud2smuljfb3qzi"
       "track_number" : 12,
       "type" : "track",
       "uri" : "spotify:track:2k1yPYf9WGA4LiqcLVwtzn"
+    }, {
+      "album" : {
+        "album_type" : "compilation",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+          },
+          "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+          "id" : "0LyfQWJT6nXafLPZqxe9Of",
+          "name" : "Various Artists",
+          "type" : "artist",
+          "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+        } ],
+        "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/26pN2HAuYxPHumuRghBFip"
+        },
+        "href" : "https://api.spotify.com/v1/albums/26pN2HAuYxPHumuRghBFip",
+        "id" : "26pN2HAuYxPHumuRghBFip",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b27307735c7591399cd26c09b211",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e0207735c7591399cd26c09b211",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d0000485107735c7591399cd26c09b211",
+          "width" : 64
+        } ],
+        "name" : "Live Aid (Live, 13th July 1985)",
+        "release_date" : "1985",
+        "release_date_precision" : "year",
+        "total_tracks" : 111,
+        "type" : "album",
+        "uri" : "spotify:album:26pN2HAuYxPHumuRghBFip"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+        "id" : "1dfeR4HaWDbWqFHLkxsg1d",
+        "name" : "Queen",
+        "type" : "artist",
+        "uri" : "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+      } ],
+      "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+      "disc_number" : 2,
+      "duration_ms" : 390121,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "UK6821836636"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/06yFyGZK1lj7D91iYTRkL9"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/06yFyGZK1lj7D91iYTRkL9",
+      "id" : "06yFyGZK1lj7D91iYTRkL9",
+      "is_local" : false,
+      "name" : "Bohemian Rhapsody / Radio Gaga - Live at Live Aid, Wembley Stadium, 13th July 1985",
+      "popularity" : 35,
+      "preview_url" : "https://p.scdn.co/mp3-preview/2bfdf3e45428cfb786c8df9648bf35e692e4e465?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 7,
+      "type" : "track",
+      "uri" : "spotify:track:06yFyGZK1lj7D91iYTRkL9"
     }, {
       "album" : {
         "album_type" : "album",
@@ -1540,15 +1540,15 @@ tcxrud2smuljfb3qzi"
     "next" : "https://api.spotify.com/v1/search?query=Bohemian+Rhapsody&type=track&offset=20&limit=20",
     "offset" : 0,
     "previous" : null,
-    "total" : 3070
+    "total" : 3079
   }
 }
 
-09:49:18.488 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-09:49:18.735 request:
+09:28:30.816 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+09:28:31.208 request:
 1 > POST https://api.spotify.com/v1/users/31pwtnpkdgtcxrud2smuljfb3qzi/playlists
 1 > Accept-Encoding: gzip,deflate
-1 > Authorization: Bearer BQAoAakC6yCMAxoWN_zv86v24G1swH4GlULBSaFSqq3DMMBGCpZRoq3EsZr_aPmsdOzCVM4ocT7i_nUzUZOT4tKUUWLfaYvF859E6bbtNL0hTahpZZdGubLed8-DbBn4A92LW2Uvl3rRkz7BR_otUN9TxuXUPkaEX4uHeeDTzvhadMSrQ-n36Kcvktp5zHL3ovwa834MkEtJHEXztEsemxUY-3qg2dJDBbT8oJUEH0J2UlcW00uUJRtqLCqqoUFqiVV8AS8LihBpq-M4CKg8lt646Q
+1 > Authorization: Bearer BQCSr_ndoCaXkU5v02WyCcf00aLba8m90ZX6sISuhNgxAXvO0uPNdXO5_DpzngncTQhitlbdlXjqYgwy7WU7W7pg7oS1etRlYNav7rtQJCPtBfexVcaHJMQxp_LWMfHSKRSGN4QlfMjXNIUegk7ICGg4ytLiN7AfmipEHw-VPNKd9GGud1RDVtP8jMX0zSGCGLKsrK8LiPoBGPagARv-cGj4dfdtf0Aop58oh0VNZoN505jdt9Ukg0gydzV3tvQKrBNricuu9hdnL2Z_OO_DOBV9UIqDAuFrWVcr3_rR2YSkT7Tl_oCXb0qTD6dosy_xq6OE
 1 > Connection: Keep-Alive
 1 > Content-Length: 69
 1 > Content-Type: application/json; charset=UTF-8
@@ -1556,7 +1556,7 @@ tcxrud2smuljfb3qzi"
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_331)
 {"name":"ApiTestPlaylist","description":"testSuccess","public":false}
 
-09:49:19.432 response time in milliseconds: 699,12
+09:28:31.713 response time in milliseconds: 505,78
 1 < 201
 1 < Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
 1 < Transfer-Encoding: chunked
@@ -1568,8 +1568,8 @@ tcxrud2smuljfb3qzi"
 1 < access-control-max-age: 604800
 1 < cache-control: private, max-age=0
 1 < content-type: application/json; charset=utf-8
-1 < date: Wed, 15 Jun 2022 06:49:18 GMT
-1 < location: https://api.spotify.com/v1/playlists/0yyXT1XXEhETtY8f7WBUog
+1 < date: Thu, 23 Jun 2022 06:28:28 GMT
+1 < location: https://api.spotify.com/v1/playlists/7yqvrZo5g6xhd8iuoHBT4t
 1 < server: envoy
 1 < strict-transport-security: max-age=31536000
 1 < x-content-type-options: nosniff
@@ -1578,14 +1578,14 @@ tcxrud2smuljfb3qzi"
   "collaborative" : false,
   "description" : "testSuccess",
   "external_urls" : {
-    "spotify" : "https://open.spotify.com/playlist/0yyXT1XXEhETtY8f7WBUog"
+    "spotify" : "https://open.spotify.com/playlist/7yqvrZo5g6xhd8iuoHBT4t"
   },
   "followers" : {
     "href" : null,
     "total" : 0
   },
-  "href" : "https://api.spotify.com/v1/playlists/0yyXT1XXEhETtY8f7WBUog",
-  "id" : "0yyXT1XXEhETtY8f7WBUog",
+  "href" : "https://api.spotify.com/v1/playlists/7yqvrZo5g6xhd8iuoHBT4t",
+  "id" : "7yqvrZo5g6xhd8iuoHBT4t",
   "images" : [ ],
   "name" : "ApiTestPlaylist",
   "owner" : {
@@ -1600,9 +1600,9 @@ tcxrud2smuljfb3qzi"
   },
   "primary_color" : null,
   "public" : false,
-  "snapshot_id" : "MSw3ZGExZmZlNWRjMmVlYTVkZmI1Mjk4MzNiNTgyNzFkNWMxNzFkMGI4",
+  "snapshot_id" : "MSw4YTE4OTRiNzhhNjI3MzJiODdkODRkNTIwYzdhYzliMWQyODk0ZDI5",
   "tracks" : {
-    "href" : "https://api.spotify.com/v1/playlists/0yyXT1XXEhETtY8f7WBUog/tracks",
+    "href" : "https://api.spotify.com/v1/playlists/7yqvrZo5g6xhd8iuoHBT4t/tracks",
     "items" : [ ],
     "limit" : 100,
     "next" : null,
@@ -1611,13 +1611,13 @@ tcxrud2smuljfb3qzi"
     "total" : 0
   },
   "type" : "playlist",
-  "uri" : "spotify:playlist:0yyXT1XXEhETtY8f7WBUog"
+  "uri" : "spotify:playlist:7yqvrZo5g6xhd8iuoHBT4t"
 }
 
-09:49:19.457 request:
-1 > POST https://api.spotify.com/v1/playlists/0yyXT1XXEhETtY8f7WBUog/tracks
+09:28:31.716 request:
+1 > POST https://api.spotify.com/v1/playlists/7yqvrZo5g6xhd8iuoHBT4t/tracks
 1 > Accept-Encoding: gzip,deflate
-1 > Authorization: Bearer BQAoAakC6yCMAxoWN_zv86v24G1swH4GlULBSaFSqq3DMMBGCpZRoq3EsZr_aPmsdOzCVM4ocT7i_nUzUZOT4tKUUWLfaYvF859E6bbtNL0hTahpZZdGubLed8-DbBn4A92LW2Uvl3rRkz7BR_otUN9TxuXUPkaEX4uHeeDTzvhadMSrQ-n36Kcvktp5zHL3ovwa834MkEtJHEXztEsemxUY-3qg2dJDBbT8oJUEH0J2UlcW00uUJRtqLCqqoUFqiVV8AS8LihBpq-M4CKg8lt646Q
+1 > Authorization: Bearer BQCSr_ndoCaXkU5v02WyCcf00aLba8m90ZX6sISuhNgxAXvO0uPNdXO5_DpzngncTQhitlbdlXjqYgwy7WU7W7pg7oS1etRlYNav7rtQJCPtBfexVcaHJMQxp_LWMfHSKRSGN4QlfMjXNIUegk7ICGg4ytLiN7AfmipEHw-VPNKd9GGud1RDVtP8jMX0zSGCGLKsrK8LiPoBGPagARv-cGj4dfdtf0Aop58oh0VNZoN505jdt9Ukg0gydzV3tvQKrBNricuu9hdnL2Z_OO_DOBV9UIqDAuFrWVcr3_rR2YSkT7Tl_oCXb0qTD6dosy_xq6OE
 1 > Connection: Keep-Alive
 1 > Content-Length: 62
 1 > Content-Type: application/json; charset=UTF-8
@@ -1625,7 +1625,7 @@ tcxrud2smuljfb3qzi"
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_331)
 {"uris":["spotify:track:3z8h0TU7ReDPLIbEnYhWZb"],"position":0}
 
-09:49:19.839 response time in milliseconds: 381,83
+09:28:32.101 response time in milliseconds: 387,20
 1 < 201
 1 < Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
 1 < Transfer-Encoding: chunked
@@ -1637,13 +1637,216 @@ tcxrud2smuljfb3qzi"
 1 < access-control-max-age: 604800
 1 < cache-control: private, max-age=0
 1 < content-type: application/json; charset=utf-8
-1 < date: Wed, 15 Jun 2022 06:49:18 GMT
+1 < date: Thu, 23 Jun 2022 06:28:28 GMT
 1 < server: envoy
 1 < strict-transport-security: max-age=31536000
 1 < x-content-type-options: nosniff
 1 < x-robots-tag: noindex, nofollow
 {
-  "snapshot_id" : "Myw3MzQ5ZjNjNzk0ZTUwOGRlYWZhMWFiZGE2ZTcwM2VmOWU1ZWM1MWNl"
+  "snapshot_id" : "MywxZWVlNzExZWI0N2IxMWZlMjQ1MmFjYmMyYmVlYzE2YmFjMTA0MDcx"
 }
 
+"SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+      "disc_number" : 1,
+      "duration_ms" : 232040,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "ARF411401085"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/5FCuLF1YtMJjgfpiSjL6n6"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/5FCuLF1YtMJjgfpiSjL6n6",
+      "id" : "5FCuLF1YtMJjgfpiSjL6n6",
+      "is_local" : false,
+      "name" : "The Final Countdown",
+      "popularity" : 34,
+      "preview_url" : "https://p.scdn.co/mp3-preview/b881b1331dd2e193a6427439fd7a2de9e2840232?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:5FCuLF1YtMJjgfpiSjL6n6"
+    } ],
+    "limit" : 20,
+    "next" : "https://api.spotify.com/v1/search?query=The+Final+Countdown&type=track&offset=20&limit=20",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 1872
+  }
+}
 
+09:47:04.865 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+09:47:05.018 request:
+1 > POST https://api.spotify.com/v1/users/31pwtnpkdgtcxrud2smuljfb3qzi/playlists
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer BQBFm2Epo0ETPwWzepwFvnbzo2FOoIl0XVfgE77iRO_ccWq0gLd5hj85bp1In4KMJM-0nun-FzwC_k3v4x4aM0klptxDJ1Jse8vp3alxr7Ypt92FCq31eFXNg0tH499wptCmJg4-5dBuTb4zXf_vubVELBmE9yJg4uI6Y04u2GzQeYc7lVWPz9rH8mO9wBgb7WLVLLqxfZTxV3J8zHhQCWHDomTwLQOCxBJ5bSgvu_AC89lyz7Zbf2IEFfwa5yCLPiwHhCOrFn_dxWYzhnBnv7FUOA
+1 > Connection: Keep-Alive
+1 > Content-Length: 69
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: api.spotify.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_331)
+{"name":"Mentorlabs Faz2","description":"testSuccess","public":false}
+
+09:47:05.461 response time in milliseconds: 433,98
+1 < 201
+1 < Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+1 < Transfer-Encoding: chunked
+1 < Via: HTTP/2 edgeproxy, 1.1 google
+1 < access-control-allow-credentials: true
+1 < access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+1 < access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+1 < access-control-allow-origin: *
+1 < access-control-max-age: 604800
+1 < cache-control: private, max-age=0
+1 < content-type: application/json; charset=utf-8
+1 < date: Mon, 20 Jun 2022 06:47:03 GMT
+1 < location: https://api.spotify.com/v1/playlists/7e6AHRehu9CSORkkfgOpvl
+1 < server: envoy
+1 < strict-transport-security: max-age=31536000
+1 < x-content-type-options: nosniff
+1 < x-robots-tag: noindex, nofollow
+{
+  "collaborative" : false,
+  "description" : "testSuccess",
+  "external_urls" : {
+    "spotify" : "https://open.spotify.com/playlist/7e6AHRehu9CSORkkfgOpvl"
+  },
+  "followers" : {
+    "href" : null,
+    "total" : 0
+  },
+  "href" : "https://api.spotify.com/v1/playlists/7e6AHRehu9CSORkkfgOpvl",
+  "id" : "7e6AHRehu9CSORkkfgOpvl",
+  "images" : [ ],
+  "name" : "Mentorlabs Faz2",
+  "owner" : {
+    "display_name" : "Emre",
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/user/31pwtnpkdgtcxrud2smuljfb3qzi"
+    },
+    "href" : "https://api.spotify.com/v1/users/31pwtnpkdgtcxrud2smuljfb3qzi",
+    "id" : "31pwtnpkdgtcxrud2smuljfb3qzi",
+    "type" : "user",
+    "uri" : "spotify:user:31pwtnpkdgtcxrud2smuljfb3qzi"
+  },
+  "primary_color" : null,
+  "public" : false,
+  "snapshot_id" : "MSwzZjc1NzYzYzkzMDU5ZmFhNWJjM2Y5NDFjYzc0MDcwOGQxY2MwNjMy",
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/playlists/7e6AHRehu9CSORkkfgOpvl/tracks",
+    "items" : [ ],
+    "limit" : 100,
+    "next" : null,
+    "offset" : 0,
+    "previous" : null,
+    "total" : 0
+  },
+  "type" : "playlist",
+  "uri" : "spotify:playlist:7e6AHRehu9CSORkkfgOpvl"
+}
+
+09:47:05.470 request:
+1 > POST https://api.spotify.com/v1/playlists/7e6AHRehu9CSORkkfgOpvl/tracks
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer BQBFm2Epo0ETPwWzepwFvnbzo2FOoIl0XVfgE77iRO_ccWq0gLd5hj85bp1In4KMJM-0nun-FzwC_k3v4x4aM0klptxDJ1Jse8vp3alxr7Ypt92FCq31eFXNg0tH499wptCmJg4-5dBuTb4zXf_vubVELBmE9yJg4uI6Y04u2GzQeYc7lVWPz9rH8mO9wBgb7WLVLLqxfZTxV3J8zHhQCWHDomTwLQOCxBJ5bSgvu_AC89lyz7Zbf2IEFfwa5yCLPiwHhCOrFn_dxWYzhnBnv7FUOA
+1 > Connection: Keep-Alive
+1 > Content-Length: 62
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: api.spotify.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_331)
+{"uris":["spotify:track:0nPb5PLTXAetNCpi0PyGGO"],"position":0}
+
+09:47:05.726 response time in milliseconds: 264,53
+1 < 404
+1 < Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+1 < Transfer-Encoding: chunked
+1 < Via: HTTP/2 edgeproxy, 1.1 google
+1 < access-control-allow-credentials: true
+1 < access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+1 < access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+1 < access-control-allow-origin: *
+1 < access-control-max-age: 604800
+1 < cache-control: private, max-age=0
+1 < content-type: application/json; charset=utf-8
+1 < date: Mon, 20 Jun 2022 06:47:03 GMT
+1 < server: envoy
+1 < strict-transport-security: max-age=31536000
+1 < x-content-type-options: nosniff
+1 < x-robots-tag: noindex, nofollow
+{
+  "error" : {
+    "status" : 404,
+    "message" : "Not found."
+  }
+}
+
+09:47:05.742 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+09:47:05.758 request:
+1 > POST https://api.spotify.com/v1/users/31pwtnpkdgtcxrud2smuljfb3qzi/playlists
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer BQBFm2Epo0ETPwWzepwFvnbzo2FOoIl0XVfgE77iRO_ccWq0gLd5hj85bp1In4KMJM-0nun-FzwC_k3v4x4aM0klptxDJ1Jse8vp3alxr7Ypt92FCq31eFXNg0tH499wptCmJg4-5dBuTb4zXf_vubVELBmE9yJg4uI6Y04u2GzQeYc7lVWPz9rH8mO9wBgb7WLVLLqxfZTxV3J8zHhQCWHDomTwLQOCxBJ5bSgvu_AC89lyz7Zbf2IEFfwa5yCLPiwHhCOrFn_dxWYzhnBnv7FUOA
+1 > Connection: Keep-Alive
+1 > Content-Length: 69
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: api.spotify.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_331)
+{"name":"Mentorlabs Faz2","description":"testSuccess","public":false}
+
+09:47:06.126 response time in milliseconds: 378,06
+1 < 201
+1 < Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+1 < Transfer-Encoding: chunked
+1 < Via: HTTP/2 edgeproxy, 1.1 google
+1 < access-control-allow-credentials: true
+1 < access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+1 < access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+1 < access-control-allow-origin: *
+1 < access-control-max-age: 604800
+1 < cache-control: private, max-age=0
+1 < content-type: application/json; charset=utf-8
+1 < date: Mon, 20 Jun 2022 06:47:04 GMT
+1 < location: https://api.spotify.com/v1/playlists/4alsK3iXNJ3ZQ1g2WwgdmN
+1 < server: envoy
+1 < strict-transport-security: max-age=31536000
+1 < x-content-type-options: nosniff
+1 < x-robots-tag: noindex, nofollow
+{
+  "collaborative" : false,
+  "description" : "testSuccess",
+  "external_urls" : {
+    "spotify" : "https://open.spotify.com/playlist/4alsK3iXNJ3ZQ1g2WwgdmN"
+  },
+  "followers" : {
+    "href" : null,
+    "total" : 0
+  },
+  "href" : "https://api.spotify.com/v1/playlists/4alsK3iXNJ3ZQ1g2WwgdmN",
+  "id" : "4alsK3iXNJ3ZQ1g2WwgdmN",
+  "images" : [ ],
+  "name" : "Mentorlabs Faz2",
+  "owner" : {
+    "display_name" : "Emre",
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/user/31pwtnpkdgtcxrud2smuljfb3qzi"
+    },
+    "href" : "https://api.spotify.com/v1/users/31pwtnpkdgtcxrud2smuljfb3qzi",
+    "id" : "31pwtnpkdgtcxrud2smuljfb3qzi",
+    "type" : "user",
+    "uri" : "spotify:user:31pwtnpkdgtcxrud2smuljfb3qzi"
+  },
+  "primary_color" : null,
+  "public" : false,
+  "snapshot_id" : "MSwxNTA1Y2MzZDUwZmM0MTY0MGU5YTdkNGVjMTcyNDQyYzNjMDE0MTc3",
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/playlists/4alsK3iXNJ3ZQ1g2WwgdmN/tracks",
+    "items" : [ ],
+    "limit" : 100,
+    "next" : null,
+    "offset" : 0,
+    "previous" : null,
+    "total" : 0
+  },
+  "type" : "playlist",
+  "uri" : "spotify:playlist:4alsK3iXNJ3ZQ1g2WwgdmN"
+}
+
+09:47:06.142 preferred port 9515 not available, will use: 63162
